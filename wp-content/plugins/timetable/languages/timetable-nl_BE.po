@@ -1,0 +1,2452 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Timetable Responsive Schedule For WordPress v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-04 15:12+0100\n"
+"PO-Revision-Date: 2020-09-04 15:12+0100\n"
+"Last-Translator: CnpAdmin <info@cutnpaste.be>\n"
+"Language-Team: Nederlands (België)\n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_n;_x;"
+"_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;"
+"_n_noop;_nx_noop\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Version: 2.3.0; wp-5.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin-page-email-config.php:2
+msgid "Email configuration"
+msgstr "Email configuratie"
+
+#: admin-page-email-config.php:10
+msgid "Admin email"
+msgstr "Admin email"
+
+#: admin-page-email-config.php:15
+msgid "Admin SMTP (optional)"
+msgstr "Admin SMTP (optioneel)"
+
+#: admin-page-email-config.php:20
+msgid "Email template for client"
+msgstr "E-mailsjabloon voor de bezoeker"
+
+#: admin-page-email-config.php:25
+msgid "Email template for admin"
+msgstr "E-mailsjabloon voor admin"
+
+#: admin-page-email-config.php:35 class/sp-bookings.class.php:170
+#: timetable.php:1570
+msgid "Name"
+msgstr "Naam"
+
+#: admin-page-email-config.php:48
+msgid "Email"
+msgstr "Email"
+
+#: admin-page-email-config.php:61
+msgid "Debug"
+msgstr "Debug"
+
+# @ timetable
+#: admin-page-email-config.php:66 admin-page.php:268 admin-page.php:284
+#: admin-page.php:300 admin-page.php:335 admin-page.php:351 admin-page.php:410
+#: admin-page.php:427 admin-page.php:460 admin-page.php:476 admin-page.php:492
+#: admin-page.php:862 admin-page.php:879 admin-page.php:938 admin-page.php:953
+#: admin-page.php:970 admin-page.php:986 admin-page.php:1001
+#: admin-page.php:1017 admin-page.php:1033 admin-page.php:1049
+#: admin-page.php:1156 post-type-events.php:518 shortcode-timetable.php:1593
+#: shortcode-timetable.php:1603 shortcode-timetable.php:1613
+#: shortcode-timetable.php:1636 shortcode-timetable.php:1646
+#: shortcode-timetable.php:1681 shortcode-timetable.php:1692
+#: shortcode-timetable.php:1713 shortcode-timetable.php:1723
+#: shortcode-timetable.php:1733 shortcode-timetable.php:1961
+#: shortcode-timetable.php:1972 shortcode-timetable.php:2010
+#: shortcode-timetable.php:2024 shortcode-timetable.php:2040
+#: shortcode-timetable.php:2055 shortcode-timetable.php:2069
+#: shortcode-timetable.php:2084 shortcode-timetable.php:2099
+#: shortcode-timetable.php:2114 shortcode-timetable.php:2178
+msgid "No"
+msgstr "Nee"
+
+# @ timetable
+#: admin-page-email-config.php:67 admin-page.php:269 admin-page.php:285
+#: admin-page.php:301 admin-page.php:336 admin-page.php:352 admin-page.php:411
+#: admin-page.php:426 admin-page.php:461 admin-page.php:477 admin-page.php:493
+#: admin-page.php:937 admin-page.php:954 admin-page.php:969 admin-page.php:985
+#: admin-page.php:1002 admin-page.php:1018 admin-page.php:1034
+#: admin-page.php:1050 admin-page.php:1157 post-type-events.php:519
+#: shortcode-timetable.php:1594 shortcode-timetable.php:1604
+#: shortcode-timetable.php:1614 shortcode-timetable.php:1637
+#: shortcode-timetable.php:1647 shortcode-timetable.php:1682
+#: shortcode-timetable.php:1691 shortcode-timetable.php:1714
+#: shortcode-timetable.php:1724 shortcode-timetable.php:1734
+#: shortcode-timetable.php:2009 shortcode-timetable.php:2025
+#: shortcode-timetable.php:2039 shortcode-timetable.php:2054
+#: shortcode-timetable.php:2070 shortcode-timetable.php:2085
+#: shortcode-timetable.php:2100 shortcode-timetable.php:2115
+#: shortcode-timetable.php:2179
+msgid "Yes"
+msgstr "Ja"
+
+#: admin-page-email-config.php:71
+msgid ""
+"If debug is enabled, then additional information will be displayed in the "
+"booking pop-up."
+msgstr ""
+"Als foutopsporing is ingeschakeld, wordt aanvullende informatie weergegeven "
+"in het pop-upvenster."
+
+#: admin-page-email-config.php:88
+msgid "Host"
+msgstr "Host"
+
+#: admin-page-email-config.php:101
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: admin-page-email-config.php:114
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: admin-page-email-config.php:127
+msgid "Port"
+msgstr "Port"
+
+#: admin-page-email-config.php:140
+msgid "SMTP Secure"
+msgstr "SMTP Secure"
+
+#: admin-page-email-config.php:146
+msgid "ssl"
+msgstr "ssl"
+
+#: admin-page-email-config.php:147
+msgid "tls"
+msgstr "tls"
+
+#: admin-page-email-config.php:168 admin-page-email-config.php:204
+msgid "Email subject"
+msgstr "Email onderwerp"
+
+#: admin-page-email-config.php:180 admin-page-email-config.php:216
+msgid "Available placeholders:"
+msgstr "Beschikbare tijdelijke data:"
+
+#: admin-page-event-post-type.php:2
+msgid "Events post type configuration"
+msgstr "Soort workshop configuratie"
+
+#: admin-page-event-post-type.php:9
+msgid "Event slug: "
+msgstr "Workshop slug:"
+
+#: admin-page-event-post-type.php:17
+msgid "Event label singular: "
+msgstr "Enkelvoud workshop label:"
+
+#: admin-page-event-post-type.php:25
+msgid "Event label plural: "
+msgstr "Meervoud workshop label:"
+
+#: admin-page-event-post-type.php:34 admin-page.php:45 admin-page.php:1229
+msgid "Save"
+msgstr "Opslaan"
+
+#: admin-page-google-calendar.php:2 admin-page-google-calendar.php:307
+#: timetable.php:366
+msgid "Google Calendar"
+msgstr "Google Calendar"
+
+#: admin-page-google-calendar.php:8
+msgid "Configuration"
+msgstr "Configuratie"
+
+#: admin-page-google-calendar.php:13 admin-page-google-calendar.php:278
+#: class/sp-bookings.class.php:129
+msgid "Export"
+msgstr "Export"
+
+#: admin-page-google-calendar.php:18 admin-page-google-calendar.php:525
+msgid "Import"
+msgstr "Importeer"
+
+#: admin-page-google-calendar.php:30
+msgid "Calendar ID"
+msgstr "Kalender ID"
+
+#: admin-page-google-calendar.php:37
+msgid "Google Calendar ID."
+msgstr "Google Calendar ID."
+
+#: admin-page-google-calendar.php:43
+msgid "Service account"
+msgstr "Serviceaccount"
+
+#: admin-page-google-calendar.php:47
+msgid "Copy/paste the contents of downloaded *.json file."
+msgstr "Kopieer / plak de inhoud van het gedownloade * .json-bestand."
+
+#: admin-page-google-calendar.php:57
+msgid "Save Options"
+msgstr "Opties opslaan"
+
+#: admin-page-google-calendar.php:67
+msgid "Integration instructions"
+msgstr "Integratie instructies"
+
+#: admin-page-google-calendar.php:68
+msgid "1. Log in to your Gmail account."
+msgstr "1. Log in op uw Gmail acount."
+
+#: admin-page-google-calendar.php:69
+#, php-format
+msgid ""
+"2. Visit <a href='%s' target='_blank'>Google API Console</a> page and create "
+"a new project (<a href='%s' target='_blank'>screen</a>). In 'Project name' "
+"field specify the name and click 'Create' (<a href='%s' "
+"target='_blank'>screen</a>)."
+msgstr ""
+"2. Ga naar de pagina <a href='%s' target='_blank'> Google API Console </a> "
+"en maak een nieuw project (scherm <a href='%s' target='_blank'> </a> ). Geef "
+"in het veld 'Projectnaam' de naam op en klik op 'Maken' (<a href='%s' "
+"target='_blank'> scherm </a>)."
+
+#: admin-page-google-calendar.php:70
+#, php-format
+msgid ""
+"3. In 'Navigation Menu' select 'IAM & admin->Service accounts' (<a href='%s' "
+"target='_blank'>screen</a>), now click on '+ Create Service Account' option "
+"(<a href='%s' target='_blank'>screen</a>). Specify the account name and "
+"click 'Create'. In next step set Role to 'Project->Editor' and click "
+"'Continue'. In 3rd step select '+ Create Key' button, set 'Key type' to "
+"'JSON' and click 'Create' button, download the .json file generated by "
+"Google."
+msgstr ""
+"3. Selecteer in 'Navigatiemenu' IAM & admin-> Service accounts '(<a "
+"href='%s' target='_blank'> scherm </a>), klik nu op de optie' + Create "
+"Service Account '( <a href='%s' target='_blank'> scherm </a>). Geef de "
+"accountnaam op en klik op 'Maken'. Stel in de volgende stap Rol in op "
+"'Project-> Editor' en klik op 'Doorgaan'. Selecteer in de 3e stap de knop '+ "
+"Create Key', stel 'Key type' in op 'JSON' en klik op de knop 'Create', "
+"download het .json-bestand dat door Google is gegenereerd."
+
+#: admin-page-google-calendar.php:71
+#, php-format
+msgid ""
+"4. Now go to API library (<a href='%s' target='_blank'>screen</a>), search "
+"for 'Calendar' and select 'Google Calendar API' result. Click on 'Enable' "
+"button, this way the API will be enabled for your project (<a href='%s' "
+"target='_blank'>screen</a>)."
+msgstr ""
+"4. Ga nu naar de API-bibliotheek (<a href='%s' target='_blank'> scherm </"
+"a>), zoek naar 'Agenda' en selecteer het resultaat 'Google Agenda API'. Klik "
+"op de knop 'Inschakelen', op deze manier wordt de API ingeschakeld voor uw "
+"project (<a href='%s' target='_blank'> scherm </a>)."
+
+#: admin-page-google-calendar.php:72
+#, php-format
+msgid ""
+"5. Visit <a href='%s' target='_blank'>Google Calendar</a> and add new "
+"calendar (<a href='%s' target='_blank'>screen</a>). Go to 'Calendar "
+"settings' panel and in 'Share with specific people' section add the service "
+"account email created in point 4. Permissions options must be set to 'Make "
+"changes to events' (<a href='%s' target='_blank'>screen</a>). If you don't "
+"remember your service account email then please visit <a href='%s' "
+"target='_blank'>Google API Console</a> and select the calendar project that "
+"you've created earlier. Now from 'IAM & admin' menu select the 'Service "
+"accounts' option (<a href='%s' target='_blank'>screen</a>). Now just look "
+"for 'Email' column in service accounts list (<a href='%s' "
+"target='_blank'>screen</a>). In 'Calendar settings' please check 'Integrate "
+"Calendar' section copy the 'Calendar ID' value (<a href='%s' "
+"target='_blank'>screen</a>)."
+msgstr ""
+"5. Ga naar <a href='%s' target='_blank'> Google Agenda </a> en voeg een "
+"nieuwe kalender toe (<a href='%s' target='_blank'> scherm </a>). Ga naar het "
+"paneel 'Kalenderinstellingen' en voeg in het gedeelte 'Delen met specifieke "
+"mensen' de e-mail van het serviceaccount toe die is gemaakt in punt 4. "
+"Machtigingenopties moeten worden ingesteld op 'Wijzigingen aanbrengen in "
+"evenementen' (<a href = '% s' target = ' _blank \"> scherm </a>). Als u het "
+"e-mailadres van uw serviceaccount niet meer weet, gaat u naar <a href='%s' "
+"target='_blank'> Google API Console </a> en selecteert u het kalenderproject "
+"dat u eerder hebt gemaakt. Selecteer nu in het menu 'IAM & admin' de optie "
+"'Serviceaccounts' (<a href='%s' target='_blank'> scherm </a>). Zoek nu naar "
+"de kolom 'E-mail' in de lijst met serviceaccounts (<a href='%s' "
+"target='_blank'> scherm </a>). Vink in 'Kalenderinstellingen' het gedeelte "
+"'Kalender integreren' aan, kopieer de waarde 'Kalender-ID' (<a href='%s' "
+"target='_blank'> scherm </a>)."
+
+#: admin-page-google-calendar.php:73
+#, php-format
+msgid ""
+"6. Now visit 'Timetable->Google Calendar' panel and open 'Configuration' "
+"tab. In 'Calendar ID' field you must specify the ID from previous step and "
+"in 'Service account' textarea insert the contents of .json file downloaded "
+"in step 4 (<a href='%s' target='_blank'>screen</a>)."
+msgstr ""
+"6. Ga nu naar het paneel 'Tijdschema-> Google Agenda' en open het tabblad "
+"'Configuratie'. In het veld 'Kalender-ID' moet u de ID van de vorige stap "
+"opgeven en in het tekstvak 'Serviceaccount' de inhoud van het in stap 4 "
+"gedownloade .json-bestand invoegen (scherm <a href='%s' target='_blank'> </ "
+"a>)."
+
+#: admin-page-google-calendar.php:74
+msgid ""
+"7. In 'Settings->General' panel please make sure that 'Timezone' option has "
+"the same value as in your Google Calendar."
+msgstr ""
+"7. Zorg er in het paneel 'Instellingen-> Algemeen' voor dat de optie "
+"'Tijdzone' dezelfde waarde heeft als in uw Google Agenda."
+
+# @ timetable
+#: admin-page-google-calendar.php:88 admin-page.php:84
+#: shortcode-timetable.php:1493 timetable.php:1255
+msgid "Events"
+msgstr "Evenementen"
+
+#: admin-page-google-calendar.php:105
+msgid ""
+"Select the events that should be exported. Hold the CTRL key to select "
+"multiple items."
+msgstr ""
+"Selecteer de evenementen die moeten worden geëxporteerd. Houd de CTRL-toets "
+"ingedrukt om meerdere items te selecteren."
+
+#: admin-page-google-calendar.php:111 admin-page-google-calendar.php:358
+msgid "Monday"
+msgstr "Maandag"
+
+#: admin-page-google-calendar.php:125 admin-page-google-calendar.php:149
+#: admin-page-google-calendar.php:173 admin-page-google-calendar.php:197
+#: admin-page-google-calendar.php:221 admin-page-google-calendar.php:245
+#: admin-page-google-calendar.php:269 admin-page-google-calendar.php:372
+#: admin-page-google-calendar.php:396 admin-page-google-calendar.php:420
+#: admin-page-google-calendar.php:444 admin-page-google-calendar.php:468
+#: admin-page-google-calendar.php:492 admin-page-google-calendar.php:516
+#: admin-page.php:442 shortcode-timetable.php:1701
+msgid "None"
+msgstr "Geen"
+
+#: admin-page-google-calendar.php:129 admin-page-google-calendar.php:376
+msgid "Assign column to Monday."
+msgstr "Kolom toewijzen aan maandag."
+
+#: admin-page-google-calendar.php:135 admin-page-google-calendar.php:382
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: admin-page-google-calendar.php:153 admin-page-google-calendar.php:400
+msgid "Assign column to Tuesday."
+msgstr "Kolom toewijzen aan dinsdag."
+
+#: admin-page-google-calendar.php:159 admin-page-google-calendar.php:406
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: admin-page-google-calendar.php:177 admin-page-google-calendar.php:424
+msgid "Assign column to Wednesday."
+msgstr "Kolom toewijzen aan woensdag."
+
+#: admin-page-google-calendar.php:183 admin-page-google-calendar.php:430
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: admin-page-google-calendar.php:201 admin-page-google-calendar.php:448
+msgid "Assign column to Thursday."
+msgstr "Kolom toewijzen aan donderdag."
+
+#: admin-page-google-calendar.php:207 admin-page-google-calendar.php:454
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: admin-page-google-calendar.php:225 admin-page-google-calendar.php:472
+msgid "Assign column to Friday."
+msgstr "Kolom toewijzen aan vrijdag."
+
+#: admin-page-google-calendar.php:231 admin-page-google-calendar.php:478
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: admin-page-google-calendar.php:249 admin-page-google-calendar.php:496
+msgid "Assign column to Saturday."
+msgstr "Kolom toewijzen aan zaterdag."
+
+#: admin-page-google-calendar.php:255 admin-page-google-calendar.php:502
+msgid "Sunday"
+msgstr "Zondag"
+
+#: admin-page-google-calendar.php:273 admin-page-google-calendar.php:520
+msgid "Assign column to Sunday."
+msgstr "Kolom toewijzen aan zondag."
+
+#: admin-page-google-calendar.php:281
+msgid "Export selected events to Google Calendar."
+msgstr "Exporteer geselecteerde workshops naar Google Agenda."
+
+#: admin-page-google-calendar.php:291
+msgid "Export instructions"
+msgstr "Export instructies"
+
+#: admin-page-google-calendar.php:292
+msgid ""
+"This panel allows you to export event hours into Google Calendar. You can "
+"specify which events should be used and you can also assign columns to "
+"weekdays."
+msgstr ""
+"Met dit paneel kun je evenementuren naar Google Agenda exporteren. U kunt "
+"opgeven welke gebeurtenissen moeten worden gebruikt en u kunt ook kolommen "
+"toewijzen aan weekdagen."
+
+#: admin-page-google-calendar.php:293
+msgid ""
+"When you click 'Export' button then the plugin will create mentioned events "
+"in the Calendar. If you make changes to the exported event hours then you "
+"can once again use export feature to update event details in Google Calendar."
+msgstr ""
+"Als u op de knop 'Exporteren' klikt, maakt de plug-in genoemde evenementen "
+"in de agenda. Als u wijzigingen aanbrengt in de geëxporteerde evenementuren, "
+"kunt u de exportfunctie opnieuw gebruiken om evenementdetails in Google "
+"Agenda bij te werken."
+
+#: admin-page-google-calendar.php:314
+msgid "Refresh Calendar data"
+msgstr "Ververs kalender data"
+
+#: admin-page-google-calendar.php:316
+msgid "Get Calendar data"
+msgstr "Krijg kalender data"
+
+#: admin-page-google-calendar.php:321
+msgid "Fetches events data from Google Calendar."
+msgstr "Haalt workshops op uit Google Calendar."
+
+#: admin-page-google-calendar.php:338
+msgid "Calendar Events"
+msgstr "Kalender evenementen"
+
+#: admin-page-google-calendar.php:352
+msgid ""
+"Select the events that should be imported. Hold the CTRL key to select "
+"multiple items."
+msgstr ""
+"Selecteer de evenementen die moeten worden geëxporteerd. Houd de CTRL-toets "
+"ingedrukt om meerdere items te selecteren."
+
+#: admin-page-google-calendar.php:528
+msgid "Import events from Google Calendar."
+msgstr "Importeer workshops uit Google Kalender"
+
+#: admin-page-google-calendar.php:541
+msgid "Import instructions"
+msgstr "Import instructies"
+
+#: admin-page-google-calendar.php:542
+msgid ""
+"Panel allows you to import events from your calendar to the Timetable "
+"plugin. Before you import events you have to fetch calendar data, after that "
+"you will see a list of available events that you can import into timetable. "
+"Simillary to Export feature you can assign your columns to the weekdays."
+msgstr ""
+"Paneel stelt u in staat om gebeurtenissen uit uw kalender te importeren naar "
+"de plug-in Tijdschema. Voordat u evenementen importeert, moet u "
+"agendagegevens ophalen, daarna ziet u een lijst met beschikbare evenementen "
+"die u in het rooster kunt importeren. Vergelijkbaar met de exportfunctie "
+"kunt u uw kolommen toewijzen aan de weekdagen."
+
+#: admin-page-google-calendar.php:543
+msgid ""
+"If you made changes to the calendar events, then you can once again perform "
+"an import. This way the event hours in Timetable will be updated with new "
+"data."
+msgstr ""
+"Als u wijzigingen in de agenda-afspraken hebt aangebracht, kunt u opnieuw "
+"een import uitvoeren. Op deze manier worden de evenementuren in Tijdschema "
+"bijgewerkt met nieuwe gegevens."
+
+# @ timetable
+#: admin-page-import-dummy-data.php:2
+msgid "Timetable Dummy Content"
+msgstr "Timetable Dummy Content"
+
+# @ timetable
+#: admin-page-import-dummy-data.php:5
+msgid "Import dummy content"
+msgstr "Importeren dummy inhoud"
+
+# @ timetable
+#: admin-page.php:2
+msgid "Timetable Shortcode Generator"
+msgstr "Timetable Shortcode Generator"
+
+#: admin-page.php:9
+msgid "Choose shortcode id: "
+msgstr "Kies shortcode-ID:"
+
+#: admin-page.php:13 shortcode-timetable.php:1391
+msgid "choose..."
+msgstr "Kies..."
+
+#: admin-page.php:26
+msgid "Delete this shortcode"
+msgstr "Verwijder deze shortcode"
+
+#: admin-page.php:31
+msgid "Or type new shortcode id *"
+msgstr "Of typ een nieuwe shortcode-ID *"
+
+#: admin-page.php:34
+msgid ""
+"Please use only listed characters: letters, numbers, hyphen(-) and "
+"underscore(_)"
+msgstr ""
+"Gebruik alleen de weergegeven tekens: letters, cijfers, koppelteken (-) en "
+"onderstrepingsteken (_)"
+
+#: admin-page.php:35
+msgid "Unique identifier for timetable shortcode."
+msgstr "Unieke identificatie voor het tijdschema shortcode."
+
+# @ timetable
+#: admin-page.php:43 admin-page.php:1228
+msgid "Copy to Clipboard"
+msgstr "Kopieren naar klembord"
+
+# @ timetable
+#: admin-page.php:46 admin-page.php:1230
+msgid "Shortcode has been copied to clipboard!"
+msgstr "Shortcode is gekopieerd naar het klembord"
+
+# @ timetable
+#: admin-page.php:54
+msgid "Main configuration"
+msgstr "Hoofd configuratie"
+
+# @ timetable
+#: admin-page.php:59
+msgid "Colors"
+msgstr "Kleuren"
+
+# @ timetable
+#: admin-page.php:64
+msgid "Fonts"
+msgstr "Lettertypes"
+
+#: admin-page.php:69 class/bookings-list.class.php:7
+#: class/bookings-list.class.php:162
+msgid "Booking"
+msgstr "Boeking"
+
+# @ timetable
+#: admin-page.php:74 admin-page.php:1215 shortcode-timetable.php:2210
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+# @ timetable
+#: admin-page.php:93
+msgid ""
+"Select the events that are to be displayed in timetable. Hold the CTRL key "
+"to select multiple items."
+msgstr ""
+"Selecteer de evenementen die in de dienstregeling moeten worden weergegeven. "
+"Houd de CTRL-toets ingedrukt om meerdere items te selecteren."
+
+# @ timetable
+#: admin-page.php:99 shortcode-timetable.php:1500
+msgid "Event categories"
+msgstr "Evenementen categoriën"
+
+# @ timetable
+#: admin-page.php:108
+msgid ""
+"Select the events categories that are to be displayed in timetable. Hold the "
+"CTRL key to select multiple items."
+msgstr ""
+"Selecteer de evenementencategorieën die in het tijdschema moeten worden "
+"weergegeven. Houd de CTRL-toets ingedrukt om meerdere items te selecteren."
+
+# @ timetable
+#: admin-page.php:114 shortcode-timetable.php:1507
+#: widget-upcoming-events.php:348
+msgid "Hour categories"
+msgstr "Uur categorieën"
+
+# @ timetable
+#: admin-page.php:126
+msgid ""
+"Select the hour categories (if defined for existing event hours) for events "
+"that are to be displayed in timetable. Hold the CTRL key to select multiple "
+"items."
+msgstr ""
+"Selecteer de uurcategorieën (indien gedefinieerd voor bestaande "
+"evenementuren) voor evenementen die in de dienstregeling moeten worden "
+"weergegeven. Houd de CTRL-toets ingedrukt om meerdere items te selecteren."
+
+# @ timetable
+#: admin-page.php:132 shortcode-timetable.php:1514
+msgid "Columns"
+msgstr "Kolommen"
+
+# @ timetable
+#: admin-page.php:141
+msgid ""
+"Select the columns that are to be displayed in timetable. Hold the CTRL key "
+"to select multiple items."
+msgstr ""
+"Selecteer de kolommen die in de dienstregeling moeten worden weergegeven. "
+"Houd de CTRL-toets ingedrukt om meerdere items te selecteren."
+
+# @ timetable
+#: admin-page.php:147 shortcode-timetable.php:1521
+msgid "Hour measure"
+msgstr "Uurmaat"
+
+# @ timetable
+#: admin-page.php:152 shortcode-timetable.php:1524
+msgid "Hour (1h)"
+msgstr "Uur (1h)"
+
+# @ timetable
+#: admin-page.php:153 shortcode-timetable.php:1525
+msgid "Half hour (30min)"
+msgstr "Half uur (30min)"
+
+# @ timetable
+#: admin-page.php:154 shortcode-timetable.php:1526
+msgid "Quarter hour (15min)"
+msgstr "Kwartier (15min)"
+
+# @ timetable
+#: admin-page.php:158
+msgid "Choose hour measure for event hours."
+msgstr "Kies uurmaat voor evenementuren."
+
+# @ timetable
+#: admin-page.php:164 shortcode-timetable.php:1532
+msgid "Filter style"
+msgstr "Filter stijl"
+
+# @ timetable
+#: admin-page.php:169 shortcode-timetable.php:1535
+msgid "Dropdown list"
+msgstr "Dropdown lijst"
+
+# @ timetable
+#: admin-page.php:170 shortcode-timetable.php:1536
+msgid "Tabs"
+msgstr "﻿Tabs"
+
+# @ timetable
+#: admin-page.php:174
+msgid "Choose between dropdown menu and tabs for event filtering."
+msgstr ""
+"Kies tussen het vervolgkeuzemenu en tabbladen voor het filteren van "
+"gebeurtenissen."
+
+# @ timetable
+#: admin-page.php:180 shortcode-timetable.php:1542
+msgid "Filter kind"
+msgstr "Filter soort"
+
+# @ timetable
+#: admin-page.php:185 shortcode-timetable.php:1545
+msgid "By event"
+msgstr "Per workshop"
+
+# @ timetable
+#: admin-page.php:186 shortcode-timetable.php:1546
+msgid "By event category"
+msgstr "Per workshop categorie"
+
+#: admin-page.php:187 shortcode-timetable.php:1547
+msgid "By event and event category"
+msgstr "Op evenement en evenementcategorie"
+
+# @ timetable
+#: admin-page.php:191
+msgid "Choose between filtering by events or events categories."
+msgstr "Kies tussen filteren op evenementen of evenementencategorieën."
+
+# @ timetable
+#: admin-page.php:197 shortcode-timetable.php:1553
+msgid "Filter label"
+msgstr "Filter label"
+
+# @ timetable
+#: admin-page.php:204
+msgid "Specify text label for all events."
+msgstr "Geef een tekstlabel op voor alle evenementen."
+
+#: admin-page.php:210 shortcode-timetable.php:1560
+msgid "Filter label 2"
+msgstr "Filterlabel 2"
+
+#: admin-page.php:217
+msgid "Specify text label for all events categories."
+msgstr "Geef een tekstlabel op voor alle workshopcategorieën."
+
+# @ timetable
+#: admin-page.php:223 admin-page.php:228 shortcode-timetable.php:1583
+#: widget-upcoming-events.php:289
+msgid "Time format"
+msgstr "Tijdsformaat"
+
+# @ timetable
+#: admin-page.php:251 widget-upcoming-events.php:314
+msgid "Custom: "
+msgstr "Op maat:"
+
+#: admin-page.php:263 shortcode-timetable.php:1590
+msgid "Hide 'All Events' view"
+msgstr "Verberg 'Alle workshops' layout"
+
+#: admin-page.php:273
+msgid "Set to Yes to hide All Events view."
+msgstr "Stel in op Ja om de weergave Alle gebeurtenissen te verbergen."
+
+# @ timetable
+#: admin-page.php:279 shortcode-timetable.php:1600
+msgid "Hide first (hours) column"
+msgstr "Eerste kolom (uren) verbergen"
+
+# @ timetable
+#: admin-page.php:289
+msgid "Set to Yes to hide timetable column with hours."
+msgstr "Stel in op Ja om de tijdschemakolom met uren te verbergen."
+
+# @ timetable
+#: admin-page.php:295 shortcode-timetable.php:1610
+msgid "Show end hour in first (hours) column"
+msgstr "Einduur weergeven in eerste (uren) kolom"
+
+# @ timetable
+#: admin-page.php:305
+msgid ""
+"Set to Yes to show both start and end hour in timetable column with hours."
+msgstr ""
+"Stel in op Ja om zowel het begin- als het einduur in de kolom met uren met "
+"uren weer te geven."
+
+# @ timetable
+#: admin-page.php:311 shortcode-timetable.php:1620
+msgid "Event block layout"
+msgstr "Indeling van Event"
+
+# @ timetable
+#: admin-page.php:316 shortcode-timetable.php:1623
+msgid "Type 1"
+msgstr "Typ 1"
+
+# @ timetable
+#: admin-page.php:317 shortcode-timetable.php:1624
+msgid "Type 2"
+msgstr "Typ 2"
+
+# @ timetable
+#: admin-page.php:318 shortcode-timetable.php:1625
+msgid "Type 3"
+msgstr "Typ 3"
+
+# @ timetable
+#: admin-page.php:319 shortcode-timetable.php:1626
+msgid "Type 4"
+msgstr "Typ 4"
+
+# @ timetable
+#: admin-page.php:320 shortcode-timetable.php:1627
+msgid "Type 5"
+msgstr "Typ 5"
+
+# @ timetable
+#: admin-page.php:324
+msgid "Select one of the available event block layouts."
+msgstr "Selecteer een van de beschikbare lay-outs voor Event layout."
+
+# @ timetable
+#: admin-page.php:330 shortcode-timetable.php:1633
+msgid "Hide empty rows"
+msgstr "Verberg lege rijen"
+
+# @ timetable
+#: admin-page.php:340
+msgid "Set to Yes to hide timetable rows without events."
+msgstr "Stel in op Ja om rijen met gebeurtenissen in het schema te verbergen."
+
+# @ timetable
+#: admin-page.php:346 shortcode-timetable.php:1643
+#: widget-upcoming-events.php:388
+msgid "Disable event url"
+msgstr "Event URL uitschakelen"
+
+# @ timetable
+#: admin-page.php:356
+msgid "Set to Yes for nonclickable event blocks."
+msgstr "Stel in op Ja voor niet-klikbare evenementsblokken."
+
+# @ timetable
+#: admin-page.php:362 shortcode-timetable.php:1653
+msgid "Text align"
+msgstr "Tekst uitlijning"
+
+# @ timetable
+#: admin-page.php:367 shortcode-timetable.php:1656
+msgid "center"
+msgstr "Center"
+
+# @ timetable
+#: admin-page.php:368 shortcode-timetable.php:1657
+msgid "left"
+msgstr "Links"
+
+# @ timetable
+#: admin-page.php:369 shortcode-timetable.php:1658
+msgid "right"
+msgstr "Rechts"
+
+# @ timetable
+#: admin-page.php:373
+msgid "Specify text align in timetable event block."
+msgstr "Geef tekstuitlijning op in tijdschema-evenementenblok."
+
+# @ timetable
+#: admin-page.php:379 shortcode-timetable.php:1664
+msgid "Id"
+msgstr "ID"
+
+# @ timetable
+#: admin-page.php:386
+msgid ""
+"Assign a unique identifier to a timetable if you use more than one table on "
+"a single page. Otherwise, leave this field blank."
+msgstr ""
+"Wijs een unieke identificatie toe aan een rooster als u meer dan één tabel "
+"op één pagina gebruikt. Laat dit veld anders leeg."
+
+# @ timetable
+#: admin-page.php:392 shortcode-timetable.php:1671
+msgid "Row height (in px)"
+msgstr "Rij hoogte (in px)"
+
+# @ timetable
+#: admin-page.php:399
+msgid "Specify timetable row height in pixels."
+msgstr "Geef de rijhoogte van de dienstregeling op in pixels."
+
+#: admin-page.php:405 shortcode-timetable.php:1678
+msgid "Display list view on desktop"
+msgstr "Lijstweergave op bureaublad weergeven"
+
+#: admin-page.php:415
+msgid "Set to Yes to display list view in desktop mode."
+msgstr "Stel in op Ja om de lijstweergave in bureaubladmodus weer te geven."
+
+# @ timetable
+#: admin-page.php:421 shortcode-timetable.php:1688
+msgid "Responsive"
+msgstr "Responsive"
+
+# @ timetable
+#: admin-page.php:431
+msgid "Set to Yes to adjust timetable to mobile devices."
+msgstr "Stel in op Ja om de dienstregeling aan te passen op mobiele apparaten."
+
+#: admin-page.php:437 shortcode-timetable.php:1698
+msgid "Event description in responsive mode"
+msgstr "Workshopbeschrijving in responsieve modus"
+
+#: admin-page.php:443 shortcode-timetable.php:1702
+msgid "Only Description 1"
+msgstr "Alleen beschrijving 1"
+
+#: admin-page.php:444 shortcode-timetable.php:1703
+msgid "Only Description 2"
+msgstr "Alleen beschrijving 2"
+
+#: admin-page.php:445 shortcode-timetable.php:1704
+msgid "Description 1 and Description 2"
+msgstr "Beschrijving 1 en Beschrijving 2"
+
+#: admin-page.php:449
+msgid "Specify if you want to display event description in mobile mode."
+msgstr ""
+"Geef op of u de beschrijving van de workshop in de mobiele modus wilt "
+"weergeven."
+
+#: admin-page.php:455 shortcode-timetable.php:1710
+msgid "Collapse event hours in responsive mode"
+msgstr "Evenementuren samenvouwen in responsieve modus"
+
+#: admin-page.php:465
+msgid ""
+"Set to Yes to collapse event hours in responsive mode, can be expanded on "
+"click."
+msgstr ""
+"Stel in op Ja om gebeurtenisuren in de responsieve modus samen te vouwen, "
+"kan worden uitgebreid met een klik."
+
+#: admin-page.php:471 shortcode-timetable.php:1720
+msgid "Use colors in responsive mode"
+msgstr "Gebruik kleuren in responsieve modus"
+
+#: admin-page.php:481
+msgid ""
+"Set to Yes to use colors defined in shortcode and in event settings while in "
+"responsive mode."
+msgstr ""
+"Stel in op Ja om kleuren te gebruiken die zijn gedefinieerd in shortcode en "
+"in gebeurtenisinstellingen in de responsieve modus."
+
+#: admin-page.php:487 shortcode-timetable.php:1730
+msgid "Export to PDF button"
+msgstr "Exporteer naar PDF knop"
+
+#: admin-page.php:497
+msgid ""
+"Set to Yes to show 'Generate PDF' button. This option also requires enabling "
+"responsive mode."
+msgstr ""
+"Stel in op Ja om de knop 'PDF genereren' weer te geven. Deze optie vereist "
+"ook het inschakelen van de responsieve modus."
+
+#: admin-page.php:503 shortcode-timetable.php:1740
+msgid "Generate PDF label"
+msgstr "Genereer PDF label"
+
+#: admin-page.php:510
+msgid "Specify text label for 'Generate PDF' button."
+msgstr "Geef het tekstlabel op voor de knop 'PDF genereren'."
+
+# @ timetable
+#: admin-page.php:516 shortcode-timetable.php:1747
+msgid "PDF Font"
+msgstr "PDF Font"
+
+#: admin-page.php:521 shortcode-timetable.php:1750
+msgid "Lato"
+msgstr "Lato"
+
+#: admin-page.php:522 shortcode-timetable.php:1751
+msgid "DejaVu Sans"
+msgstr "DejaVu Sans"
+
+#: admin-page.php:526
+msgid ""
+"Select font used for PDF files. DejaVu Sans font supports extended "
+"characters."
+msgstr ""
+"Selecteer het lettertype dat wordt gebruikt voor PDF-bestanden. Het "
+"lettertype DejaVu Sans ondersteunt uitgebreide tekens."
+
+# @ timetable
+#: admin-page.php:558 post-type-events.php:449 shortcode-timetable.php:1757
+msgid "Timetable box background color"
+msgstr "Tijdschema vak achtergrondkleur"
+
+# @ timetable
+#: admin-page.php:569 post-type-events.php:459 shortcode-timetable.php:1764
+msgid "Timetable box hover background color"
+msgstr "Tijdschema vak zweven achtergrondkleur"
+
+# @ timetable
+#: admin-page.php:580 post-type-events.php:468 shortcode-timetable.php:1771
+msgid "Timetable box text color"
+msgstr "Tekstkleur vak tijdschema"
+
+# @ timetable
+#: admin-page.php:591 post-type-events.php:478 shortcode-timetable.php:1778
+msgid "Timetable box hover text color"
+msgstr "Tijdschema tekstvak hover tekstkleur"
+
+# @ timetable
+#: admin-page.php:602 post-type-events.php:487 shortcode-timetable.php:1785
+msgid "Timetable box hours text color"
+msgstr "Tijdschema vak uren tekstkleur"
+
+# @ timetable
+#: admin-page.php:613 shortcode-timetable.php:1792
+msgid "Timetable box hours hover text color"
+msgstr "Tijdschema vak uren zweven tekstkleur"
+
+# @ timetable
+#: admin-page.php:624 shortcode-timetable.php:1799
+msgid "Filter control background color"
+msgstr "Filter controle achtergrond"
+
+# @ timetable
+#: admin-page.php:635 shortcode-timetable.php:1806
+msgid "Row 1 style background color"
+msgstr "Rij 1 stijl achtergrondkleur"
+
+# @ timetable
+#: admin-page.php:646 shortcode-timetable.php:1813
+msgid "Row 2 style background color"
+msgstr "Rij 2 stijl achtergrondkleur"
+
+#: admin-page.php:657 shortcode-timetable.php:1820
+msgid "Generate PDF button text color"
+msgstr "Genereer PDF knop tekst kleur"
+
+#: admin-page.php:668 shortcode-timetable.php:1827
+msgid "Generate PDF button background color"
+msgstr "Genereer PDF knop achtergrond kleur"
+
+#: admin-page.php:679 shortcode-timetable.php:1834
+msgid "Generate PDF button hover text color"
+msgstr "Genereer PDF knop tekst kleur hover"
+
+#: admin-page.php:690 shortcode-timetable.php:1841
+msgid "Generate PDF button hover background color"
+msgstr "Genereer PDF knop achtergrond kleur hover"
+
+#: admin-page.php:701 shortcode-timetable.php:1848
+msgid "Booking button text color"
+msgstr "Boeking knop tekst kleur"
+
+#: admin-page.php:712 shortcode-timetable.php:1855
+msgid "Booking button background color"
+msgstr "Boeking knop achtergrond kleur"
+
+#: admin-page.php:723 shortcode-timetable.php:1862
+msgid "Booking button hover text color"
+msgstr "Boeking knop hover tekst kleur"
+
+#: admin-page.php:734 shortcode-timetable.php:1869
+msgid "Booking button hover background color"
+msgstr "Boeking knop hover achtergrond kleur"
+
+#: admin-page.php:745 shortcode-timetable.php:1876
+msgid "Booked button text color"
+msgstr "Geboekt knop tekst kleur"
+
+#: admin-page.php:756 shortcode-timetable.php:1883
+msgid "Booked button background color"
+msgstr "Geboekt knop achtergrond kleur"
+
+#: admin-page.php:767 shortcode-timetable.php:1890
+msgid "Unavailable button text color"
+msgstr "Niet beschikbaar knop tekst kleur"
+
+#: admin-page.php:778 shortcode-timetable.php:1897
+msgid "Unavailable button background color"
+msgstr "Niet beschikbaar knop achtergrond kleur"
+
+#: admin-page.php:789 shortcode-timetable.php:1904
+msgid "Available slots color"
+msgstr "Vrije plaatsen kleur"
+
+# @ timetable
+#: admin-page.php:806 shortcode-timetable.php:1911
+msgid "Table header font"
+msgstr "Tabel hoofding lettertype"
+
+# @ timetable
+#: admin-page.php:812
+msgid "Enter font name"
+msgstr "Voeg Font name in"
+
+# @ timetable
+#: admin-page.php:820 shortcode-timetable.php:1918
+msgid "or choose Google font"
+msgstr "of kies een Google-lettertype"
+
+# @ timetable
+#: admin-page.php:824
+msgid "Default"
+msgstr "Standard"
+
+# @ timetable
+#: admin-page.php:834 shortcode-timetable.php:1925
+msgid "Google font subset"
+msgstr "Google lettertype"
+
+# @ timetable
+#: admin-page.php:842 shortcode-timetable.php:1951
+msgid "Font size (in px)"
+msgstr "Lettertype (in px)"
+
+#: admin-page.php:857 shortcode-timetable.php:1958
+msgid "Show booking button"
+msgstr "Toon boeking knop"
+
+#: admin-page.php:863 admin-page.php:880 shortcode-timetable.php:1962
+#: shortcode-timetable.php:1973
+msgid "Always"
+msgstr "Altijd"
+
+#: admin-page.php:864 shortcode-timetable.php:1963
+msgid "On hover"
+msgstr "Aan zwevenOn hover"
+
+#: admin-page.php:868
+msgid "Specify if the 'Book now' button should be displayed."
+msgstr "Geef op of de knop 'Nu boeken' moet worden weergegeven."
+
+#: admin-page.php:874 shortcode-timetable.php:1969
+msgid "Show available slots"
+msgstr "Toon beschikbare plaatsen"
+
+#: admin-page.php:884
+msgid "Specify if the 'available slots' information should be displayed."
+msgstr ""
+"Geef op of de informatie over 'beschikbare slots' moet worden weergegeven."
+
+#: admin-page.php:890 shortcode-timetable.php:1979
+msgid "Available slots singular label"
+msgstr "Vrije plaatsen enkelvoud"
+
+#: admin-page.php:897 shortcode-timetable.php:1982
+msgid ""
+"Specify text label for 'slot available' information (singular). Available "
+"placeholders: {number_available}, {number_taken}, {number_total}."
+msgstr ""
+"Geef een tekstlabel op voor informatie over 'beschikbare "
+"sleuven' (enkelvoud). Beschikbare tijdelijke aanduidingen: "
+"{number_available}, {number_taken}, {number_total}."
+
+#: admin-page.php:903 shortcode-timetable.php:1987
+msgid "Available slots plural label"
+msgstr "Vrije plaatsen meervoud"
+
+#: admin-page.php:910 shortcode-timetable.php:1990
+msgid ""
+"Specify text label for 'slots available' information (plural). Available "
+"placeholders: {number_available}, {number_taken}, {number_total}."
+msgstr ""
+"Geef tekstlabel op voor 'beschikbare slots' (meervoud). Beschikbare "
+"tijdelijke aanduidingen: {number_available}, {number_taken}, {number_total}."
+
+#: admin-page.php:916 shortcode-timetable.php:1995
+msgid "Default booking view"
+msgstr "Standaard boeking layout"
+
+#: admin-page.php:921 class/bookings-list.class.php:165
+#: shortcode-timetable.php:1998
+msgid "User"
+msgstr "Naam"
+
+#: admin-page.php:922 class/sp-bookings.class.php:197
+#: shortcode-timetable.php:1999
+msgid "Guest"
+msgstr "Gast"
+
+#: admin-page.php:926 shortcode-timetable.php:2001
+msgid "Specify which booking view should be visible by default."
+msgstr "Geef op welke boekingsweergave standaard zichtbaar moet zijn."
+
+#: admin-page.php:932 shortcode-timetable.php:2006
+msgid "Allow user booking"
+msgstr "Gebruiker boeking toelaten"
+
+#: admin-page.php:942 shortcode-timetable.php:2012
+msgid "Set to 'Yes' if you want to allow logged in users to make a booking."
+msgstr "Stel in op 'Ja' als u ingelogde gebruikers een boeking wilt toestaan."
+
+#: admin-page.php:948 shortcode-timetable.php:2021
+msgid "Allow guest booking"
+msgstr "Gast boeking toelaten"
+
+#: admin-page.php:958 shortcode-timetable.php:2027
+msgid "Set to 'Yes' if you want to allow guests to make a booking."
+msgstr "Stel in op 'Ja' als u gasten een boeking wilt toestaan."
+
+#: admin-page.php:964 shortcode-timetable.php:2036
+msgid "Show guest name field"
+msgstr "Toon gast naam veld"
+
+#: admin-page.php:974 shortcode-timetable.php:2046
+msgid "Set to 'Yes' if you want to show 'Name' field in guest booking form."
+msgstr ""
+"Stel in op 'Ja' als u het veld 'Naam' wilt weergeven in het "
+"boekingsformulier voor gasten."
+
+#: admin-page.php:980 shortcode-timetable.php:2051
+msgid "Guest name field required"
+msgstr "Gastnaam veld verplicht"
+
+#: admin-page.php:990 shortcode-timetable.php:2061
+msgid "Set to 'Yes' if the 'Name' field should be required."
+msgstr "Stel in op 'Ja' als het veld 'Naam' vereist is."
+
+#: admin-page.php:996 shortcode-timetable.php:2066
+msgid "Show guest phone field"
+msgstr "Toon gast telefoon veld"
+
+#: admin-page.php:1006 shortcode-timetable.php:2076
+msgid "Set to 'Yes' if you want to show 'Phone' field in guest booking form."
+msgstr ""
+"Stel in op 'Ja' als u het veld 'Telefoon' wilt weergeven in het "
+"boekingsformulier voor gasten."
+
+#: admin-page.php:1012 shortcode-timetable.php:2081
+msgid "Guest phone field required"
+msgstr "Gasttelefoonveld vereist"
+
+#: admin-page.php:1022 shortcode-timetable.php:2091
+msgid "Set to 'Yes' if the 'Phone' field should be required."
+msgstr "Stel in op 'Ja' als het veld 'Telefoon' vereist is."
+
+#: admin-page.php:1028 shortcode-timetable.php:2096
+msgid "Show guest message field"
+msgstr "Toon gast bericht veld"
+
+#: admin-page.php:1038
+msgid ""
+"Set to 'Message' if you want to show 'Phone' field in guest booking form."
+msgstr ""
+"Stel dit in op 'Bericht' als u het veld 'Telefoon' wilt weergeven in het "
+"boekingsformulier voor gasten."
+
+#: admin-page.php:1044 shortcode-timetable.php:2111
+msgid "Guest message field required"
+msgstr "Gast bericht veld verplicht"
+
+#: admin-page.php:1054 shortcode-timetable.php:2121
+msgid "Set to 'Yes' if the 'Message' field should be required."
+msgstr "Stel in op 'Ja' als het veld 'Bericht' vereist is."
+
+#: admin-page.php:1060 shortcode-timetable.php:2126
+msgid "Booking label"
+msgstr "Boeking label"
+
+#: admin-page.php:1067
+msgid "Specify text label for booking button."
+msgstr "Geef tekstlabel op voor boekingsknop."
+
+#: admin-page.php:1073 shortcode-timetable.php:2133
+msgid "Booked label"
+msgstr "Geboekt label"
+
+#: admin-page.php:1080
+msgid "Specify text label for already booked event."
+msgstr "Geef een tekstlabel op voor een reeds geboekte workshop."
+
+#: admin-page.php:1086 shortcode-timetable.php:2140
+msgid "Unavailable label"
+msgstr "Niet beschikbaar label"
+
+#: admin-page.php:1093
+msgid "Specify text label for unavailable event."
+msgstr "Geef een tekstlabel op voor een niet-beschikbare gebeurtenis."
+
+#: admin-page.php:1099 shortcode-timetable.php:2147
+msgid "Popup booking label"
+msgstr "Popup boekingslabel"
+
+#: admin-page.php:1106
+msgid "Specify text label for booking button in the popup window."
+msgstr "Geef het tekstlabel op voor de boekingsknop in het pop-upvenster."
+
+#: admin-page.php:1112 shortcode-timetable.php:2154
+msgid "Popup login label"
+msgstr "Popup login label"
+
+#: admin-page.php:1119
+msgid "Specify text label for login button in the popup window."
+msgstr "Geef het tekstlabel op voor de knop Doorgaan in het pop-upvenster."
+
+#: admin-page.php:1125 shortcode-timetable.php:2161
+msgid "Popup cancel label"
+msgstr "popup annuleer label"
+
+#: admin-page.php:1132
+msgid "Specify text label for cancel button in the popup window."
+msgstr "Geef het tekstlabel op voor de knop Annuleren in het pop-upvenster."
+
+#: admin-page.php:1138 shortcode-timetable.php:2168
+msgid "Popup continue label"
+msgstr "Popup ga verder label"
+
+#: admin-page.php:1145
+msgid "Specify text label for continue button in the popup window."
+msgstr "Geef het tekstlabel op voor de knop Doorgaan in het pop-upvenster."
+
+#: admin-page.php:1151 shortcode-timetable.php:2175
+msgid "Terms and conditions checkbox"
+msgstr "Algemene voorwaarden aanvinkvakje"
+
+#: admin-page.php:1161 shortcode-timetable.php:2181
+msgid "Set to 'Yes' if you want to display 'Terms and conditions' checkbox."
+msgstr ""
+"Stel in op 'Ja' als u het selectievakje 'Algemene voorwaarden' wilt "
+"weergeven."
+
+#: admin-page.php:1167 shortcode-timetable.php:2186
+msgid "Terms and conditions message"
+msgstr "Algemene voorwaarden bericht"
+
+#: admin-page.php:1171 shortcode-timetable.php:2188
+msgid "Please accept terms and conditions"
+msgstr "Accepteer alstublieft de algemene voorwaarden"
+
+#: admin-page.php:1174 shortcode-timetable.php:2189
+msgid "Specify text for 'Terms and conditions' checkbox."
+msgstr ""
+"Geef op of u de beschrijving van de gebeurtenis in de mobiele modus wilt "
+"weergeven."
+
+#: admin-page.php:1180 shortcode-timetable.php:2194
+msgid "Booking pop-up message"
+msgstr "Boeking pop-up bericht"
+
+#: admin-page.php:1184 shortcode-timetable.php:2197
+msgid ""
+"Specify text that will appear in pop-up window. Available placeholders: "
+"{event_title} {column_title} {event_start} {event_end} {event_description_1} "
+"{event_description_2} {user_name} {user_email} {tt_btn_book} {tt_btn_cancel} "
+"{tt_btn_continue}"
+msgstr ""
+"Geef tekst op die in een pop-upvenster wordt weergegeven. Beschikbare "
+"tijdelijke aanduidingen: {event_title} {column_title} {event_start} "
+"{event_end} {event_description_1} {event_description_2} {user_name} "
+"{user_email} {tt_btn_book} {tt_btn_cancel} {tt_btn_continue}"
+
+#: admin-page.php:1195 shortcode-timetable.php:2202
+msgid "Booking pop-up thank you message"
+msgstr "Boeking pop-up bericht dank u boodschap"
+
+#: admin-page.php:1199 shortcode-timetable.php:2205
+msgid ""
+"Specify text that will appear in pop-up window. Available placeholders: "
+"{event_title} {column_title} {event_start} {event_end} {event_description_1} "
+"{event_description_2} {user_name} {user_email} {tt_btn_continue}"
+msgstr ""
+"Geef tekst op die in een pop-upvenster wordt weergegeven. Beschikbare "
+"tijdelijke aanduidingen: {event_title} {column_title} {event_start} "
+"{event_end} {event_description_1} {event_description_2} {user_name} "
+"{user_email} {tt_btn_continue}"
+
+#: class/bookings-list.class.php:8
+msgid "Bookings"
+msgstr "Boekingen"
+
+#: class/bookings-list.class.php:57
+msgid "Booking deleted."
+msgstr "Boeking verwijderd."
+
+#: class/bookings-list.class.php:77
+msgid "No bookings avaliable."
+msgstr "Geen boekingen beschikbaar."
+
+#: class/bookings-list.class.php:90 class/bookings-list.class.php:110
+#, php-format
+msgid "Booking #%d (%s)"
+msgstr "Boeking #%d (%s)"
+
+#: class/bookings-list.class.php:130
+#, php-format
+msgid "Guest (%s)"
+msgstr "Gast (%s)"
+
+# @ timetable
+#: class/bookings-list.class.php:163 post-type-events.php:645
+#: post-type-weekdays.php:40
+msgid "Date"
+msgstr "Datum"
+
+#: class/bookings-list.class.php:164 class/sp-bookings.class.php:165
+#: timetable.php:1254
+msgid "Event"
+msgstr "Workshop"
+
+#: class/bookings-list.class.php:166 class/sp-bookings.class.php:173
+#: timetable.php:1614
+msgid "Message"
+msgstr "Aantal leerlingen"
+
+#: class/bookings-list.class.php:226
+msgid "You're not allowed to perform this action."
+msgstr "U mag deze actie niet uitvoeren."
+
+#: class/sp-bookings.class.php:30
+msgid "Timetable Bookings"
+msgstr "Workshop Reservaties"
+
+#: class/sp-bookings.class.php:32
+msgid "Export Bookings"
+msgstr "Exporteer boekingen"
+
+#: class/sp-bookings.class.php:54
+msgid "Bookings list"
+msgstr "Lijst boekingen"
+
+#: class/sp-bookings.class.php:88
+msgid "Bookings export"
+msgstr "Boekingen export"
+
+#: class/sp-bookings.class.php:94
+msgid "Events: "
+msgstr "Workshops:"
+
+# @ timetable
+#: class/sp-bookings.class.php:111
+msgid "Columns: "
+msgstr "Kolommen"
+
+#: class/sp-bookings.class.php:164
+msgid "ID"
+msgstr "ID"
+
+#: class/sp-bookings.class.php:166
+msgid "Weekday"
+msgstr "Weekdag"
+
+#: class/sp-bookings.class.php:167
+msgid "Start"
+msgstr "Start"
+
+#: class/sp-bookings.class.php:168
+msgid "End"
+msgstr "Einde"
+
+#: class/sp-bookings.class.php:169
+msgid "Type"
+msgstr "Type"
+
+#: class/sp-bookings.class.php:171
+msgid "E-mail"
+msgstr "Email"
+
+#: class/sp-bookings.class.php:172 timetable.php:1589
+msgid "Phone"
+msgstr "Telefoonnummer"
+
+#: class/sp-bookings.class.php:189
+#, php-format
+msgid "Logged in (%s)"
+msgstr "Ingelogd (%s)"
+
+#: importer/parsers.php:42 importer/parsers.php:72 importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: importer/parsers.php:84 importer/parsers.php:89 importer/parsers.php:279
+#: importer/parsers.php:468
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: importer/wordpress-importer.php:134 importer/wordpress-importer.php:143
+#: importer/wordpress-importer.php:194 importer/wordpress-importer.php:198
+#: importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: importer/wordpress-importer.php:178
+msgid "All done."
+msgstr ""
+
+#: importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: importer/wordpress-importer.php:266
+#, fuzzy
+msgid "Assign Authors"
+msgstr "Kolom toewijzen aan donderdag."
+
+#: importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: importer/wordpress-importer.php:286
+msgid "Submit"
+msgstr ""
+
+#: importer/wordpress-importer.php:299
+#, fuzzy
+msgid "Import author:"
+msgstr "Import instructies"
+
+#: importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: importer/wordpress-importer.php:425
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:465
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:511 importer/wordpress-importer.php:652
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:537
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:559
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: importer/wordpress-importer.php:618
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: importer/wordpress-importer.php:783
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: importer/wordpress-importer.php:790
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:853
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: importer/wordpress-importer.php:866
+msgid "Invalid file type"
+msgstr ""
+
+#: importer/wordpress-importer.php:910
+msgid "Remote server did not respond"
+msgstr ""
+
+#: importer/wordpress-importer.php:916
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: importer/wordpress-importer.php:923
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: importer/wordpress-importer.php:928
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: importer/wordpress-importer.php:934
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: importer/wordpress-importer.php:1033
+msgid "Import WordPress"
+msgstr ""
+
+#: importer/wordpress-importer.php:1040
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: importer/wordpress-importer.php:1055
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: importer/wordpress-importer.php:1056
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: post-type-events.php:25
+msgid "Add New"
+msgstr "Nieuw toevoegen"
+
+#: post-type-events.php:26
+#, php-format
+msgid "Add New %s"
+msgstr "Nieuw toevoegen %s"
+
+#: post-type-events.php:27
+#, php-format
+msgid "Edit %s"
+msgstr "Wijzig %s"
+
+#: post-type-events.php:28
+#, php-format
+msgid "New %s"
+msgstr "Nieuw %s"
+
+#: post-type-events.php:29
+#, php-format
+msgid "All %s"
+msgstr "Alles %s"
+
+#: post-type-events.php:30
+#, php-format
+msgid "View %s"
+msgstr "Layout %s"
+
+#: post-type-events.php:31
+#, php-format
+msgid "Search %s"
+msgstr "Zoeken %s"
+
+#: post-type-events.php:32
+#, php-format
+msgid "No %s found"
+msgstr "Geen %s gevonden"
+
+#: post-type-events.php:33
+#, php-format
+msgid "No %s found in Trash"
+msgstr "Geen %s gevonden in prullenbak"
+
+# @ timetable
+#: post-type-events.php:49 post-type-events.php:644
+#: widget-upcoming-events.php:334
+msgid "Categories"
+msgstr "Categorieën"
+
+# @ timetable
+#: post-type-events.php:49 post-type-events.php:307 post-type-events.php:370
+msgid "Category"
+msgstr "Category"
+
+# @ timetable
+#: post-type-events.php:163
+msgid "Event hours"
+msgstr "Workshop uren"
+
+# @ timetable
+#: post-type-events.php:170
+msgid "Options"
+msgstr "Opties"
+
+# @ timetable
+#: post-type-events.php:277 post-type-events.php:362
+msgid "Tooltip"
+msgstr "Tooltip"
+
+# @ timetable
+#: post-type-events.php:279 post-type-events.php:346
+msgid "Description 1"
+msgstr "Beschrijving 1"
+
+# @ timetable
+#: post-type-events.php:281 post-type-events.php:354
+msgid "Description 2"
+msgstr "Beschrijving 2"
+
+#: post-type-events.php:283 post-type-events.php:378
+msgid "Available slots"
+msgstr "Vrije plaatsen"
+
+#: post-type-events.php:285 post-type-events.php:386
+msgid "Slots per user"
+msgstr "Plaatsen per gebruiker"
+
+#: post-type-events.php:288
+msgid "Show/Hide booked users"
+msgstr "Geboekte gebruikers tonen/verbergen"
+
+#: post-type-events.php:295
+#, php-format
+msgid "<a href=\"%s\">%s</a> on %s"
+msgstr "<a href=\"%s\">%s</a> on %s"
+
+#: post-type-events.php:299
+#, php-format
+msgid "Guest: %s on %s"
+msgstr "Gast: %s op %s"
+
+# @ timetable
+#: post-type-events.php:317 post-type-events.php:407
+msgid "Timetable column"
+msgstr "Timetable kolom"
+
+# @ timetable
+#: post-type-events.php:328
+msgid "Start hour"
+msgstr "Startuur"
+
+# @ timetable
+#: post-type-events.php:337
+msgid "End hour"
+msgstr "Einduur"
+
+# @ timetable
+#: post-type-events.php:394
+msgid "Add"
+msgstr "Toevoegen"
+
+#: post-type-events.php:402
+msgid "Delete event bookings"
+msgstr "Verwijder workshop boekingen"
+
+#: post-type-events.php:411
+msgid "All"
+msgstr "Alles"
+
+#: post-type-events.php:421
+msgid "Delete"
+msgstr "verwijder"
+
+# @ timetable
+#: post-type-events.php:441
+msgid "Subtitle"
+msgstr "Untertitel"
+
+# @ timetable
+#: post-type-events.php:454
+msgid "Required when 'Timetable box hover color' isn't empty"
+msgstr "Vereist wanneer 'Tijdschema vak hoverkleur' niet leeg is"
+
+# @ timetable
+#: post-type-events.php:473
+msgid "Required when 'Timetable box hover text color' isn't empty"
+msgstr "Vereist wanneer 'Tijdschema tekst vak tekstkleur' niet leeg is"
+
+# @ timetable
+#: post-type-events.php:492
+msgid "Required when 'Timetable box hover hours text color' isn't empty"
+msgstr "Vereist wanneer 'Tijdvak vak hover uren tekstkleur' niet leeg is"
+
+# @ timetable
+#: post-type-events.php:497
+msgid "Timetable box hover hours text color"
+msgstr "Tijdschema vak zweven uren tekstkleur"
+
+# @ timetable
+#: post-type-events.php:506
+msgid "Timetable custom URL"
+msgstr "Timetable Dummy Content"
+
+# @ timetable
+#: post-type-events.php:514
+msgid "Disable timetable event URL"
+msgstr "Tijdschema URL uitschakelen"
+
+# @ timetable
+#: post-type-events.php:643
+msgctxt "post type singular name"
+msgid "Title"
+msgstr "Titel"
+
+#: post-type-events.php:691
+#, fuzzy, php-format
+msgid "Show All %s"
+msgstr "Alles %s"
+
+#: post-type-events.php:710
+msgid ""
+"Error: Available slots value must be equal or greater than the number of "
+"existing bookings."
+msgstr ""
+"Fout: de waarde van de beschikbare slots moet gelijk zijn aan of groter zijn "
+"dan het aantal bestaande boekingen."
+
+# @ timetable
+#: post-type-weekdays.php:6
+msgctxt "post type general name"
+msgid "Timetable columns"
+msgstr "Timetable kolommen"
+
+# @ timetable
+#: post-type-weekdays.php:7
+msgctxt "post type singular name"
+msgid "Timetable Column"
+msgstr "Timetable Kolom"
+
+# @ timetable
+#: post-type-weekdays.php:8
+msgctxt "timetable_weekdays"
+msgid "Add New"
+msgstr "Nieuw toevoegen"
+
+# @ timetable
+#: post-type-weekdays.php:9
+msgid "Add New Timetable Column"
+msgstr "Nieuwe Kolom toevoegen"
+
+# @ timetable
+#: post-type-weekdays.php:10
+msgid "Edit Timetable Column"
+msgstr "Wijzig tijdschema kolom"
+
+# @ timetable
+#: post-type-weekdays.php:11
+msgid "New Timetable Column"
+msgstr "Nieuwe tijdschema kolom"
+
+# @ timetable
+#: post-type-weekdays.php:12
+msgid "All Timetable Columns"
+msgstr "Alle timetables"
+
+# @ timetable
+#: post-type-weekdays.php:13
+msgid "View Timetable Column"
+msgstr "Kolom Tijdschema bekijken"
+
+# @ timetable
+#: post-type-weekdays.php:14
+msgid "Search Timetable Columns"
+msgstr "Nieuwe tijdschema kolom"
+
+# @ timetable
+#: post-type-weekdays.php:15
+msgid "No timetable columns found"
+msgstr "Geen tijdschemakolommen gevonden"
+
+# @ timetable
+#: post-type-weekdays.php:16
+msgid "No timetable columns found in Trash"
+msgstr "Geen tijdschemakolommen gevonden in Prullenbak"
+
+# @ timetable
+#: post-type-weekdays.php:18
+msgid "Timetable columns"
+msgstr "Tijdschema kolommen"
+
+#: post-type-weekdays.php:39
+msgid "Day name"
+msgstr "Dag Naam"
+
+#: shortcode-timetable.php:358 shortcode-timetable.php:370
+#: shortcode-timetable.php:394
+#, php-format
+msgid "No %s available!"
+msgstr "Geen %s beschikbaar!"
+
+#: shortcode-timetable.php:389
+#, php-format
+msgid "No %1$s available in %2$s category!"
+msgstr "Geen %1$s beschikbaarheid in %2$s categorie!"
+
+#: shortcode-timetable.php:559
+#, php-format
+msgid "No %s hours available!"
+msgstr "Geen %s uren beschikbaar!"
+
+#: shortcode-timetable.php:1474 timetable.php:361
+msgid "Timetable"
+msgstr "Tijdschema"
+
+#: shortcode-timetable.php:1486
+msgid "Choose shortcode id:"
+msgstr "Kies shortcode-ID:"
+
+# @ timetable
+#: shortcode-timetable.php:1555
+msgid "All Events"
+msgstr "Alle workshops"
+
+#: shortcode-timetable.php:1562
+msgid "All Events Categories"
+msgstr "Alle workshop categorieën"
+
+#: shortcode-timetable.php:1571
+msgid "Select time format"
+msgstr "Selecteer tijdnotatie"
+
+#: shortcode-timetable.php:1574
+msgid "09.03 (H.i)"
+msgstr "09.03 (H.i)"
+
+#: shortcode-timetable.php:1575
+msgid "09:03 (H:i)"
+msgstr "09:03 (H:i)"
+
+#: shortcode-timetable.php:1576
+msgid "9:03 am (g:i a)"
+msgstr "9:03 am (g:i a)"
+
+#: shortcode-timetable.php:1577
+msgid "9:03 AM (g:i A)"
+msgstr "9:03 AM (g:i A)"
+
+#: shortcode-timetable.php:1742
+msgid "Generate PDF"
+msgstr "Genereer PDF"
+
+#: shortcode-timetable.php:2106
+msgid "Set to 'Yes' if you want to show 'Message' field in guest booking form."
+msgstr ""
+"Stel in op 'Ja' als u het veld 'Bericht' wilt weergeven in het "
+"boekingsformulier voor gasten."
+
+#: shortcode-timetable.php:2128 shortcode-timetable.php:2149 shortcodes.php:91
+msgid "Book now"
+msgstr "Boek nu"
+
+#: shortcode-timetable.php:2135 shortcodes.php:92
+msgid "Booked"
+msgstr "Geboekt"
+
+#: shortcode-timetable.php:2142 shortcodes.php:93
+msgid "Unavailable"
+msgstr "Niet beschikbaar"
+
+#: shortcode-timetable.php:2156
+msgid "Log in"
+msgstr "Log in"
+
+#: shortcode-timetable.php:2163
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: shortcode-timetable.php:2170
+msgid "Continue"
+msgstr "Ga verder"
+
+#: timetable.php:68
+msgid "You have been booked for event {event_title}"
+msgstr "Je bent geboekt voor evenement {event_title}"
+
+#: timetable.php:88
+msgid "New booking for event: {event_title}"
+msgstr "Nieuwe boeking voor workshop: {event_title}"
+
+#: timetable.php:157
+#, php-format
+msgid "Error: Booking #%d does not exist or validation code is incorrect."
+msgstr "Fout: boeking #% d bestaat niet of validatiecode is onjuist."
+
+#: timetable.php:170
+#, php-format
+msgid "Booking #%d (%s) deleted"
+msgstr "Boeking #%d (%s) verwijderd"
+
+#: timetable.php:171 timetable.php:217
+#, php-format
+msgid "Title: %s"
+msgstr "Titel: %s"
+
+#: timetable.php:172 timetable.php:218
+#, php-format
+msgid "Time: %s"
+msgstr "Tijd: %s"
+
+#: timetable.php:173 timetable.php:219
+#, php-format
+msgid "Column: %s"
+msgstr "Kolom: %s"
+
+#: timetable.php:175 timetable.php:221
+#, php-format
+msgid "Description 1: %s"
+msgstr "Beschrijving 1: %s"
+
+#: timetable.php:177 timetable.php:223
+#, php-format
+msgid "Description 2: %s"
+msgstr "Beschrijving 2: %s"
+
+#: timetable.php:204
+msgid "Bookings canceled"
+msgstr "Boekingen geannuleerd"
+
+#: timetable.php:207
+msgid "Client details"
+msgstr "Klant details"
+
+#: timetable.php:208
+#, php-format
+msgid "Name: %s"
+msgstr "Naam: %s"
+
+#: timetable.php:209
+#, php-format
+msgid "Email: %s"
+msgstr "Email: %s"
+
+#: timetable.php:211
+#, php-format
+msgid "Phone: %s"
+msgstr "Telefoon: %s"
+
+#: timetable.php:213
+msgid "Canceled Bookings"
+msgstr "Geannuleerde boekingen"
+
+#: timetable.php:216
+#, php-format
+msgid "Booking: #%d (%s)"
+msgstr "Boeking: #%d (%s)"
+
+# @ timetable
+#: timetable.php:297
+msgid "Event post thumbnail"
+msgstr "Thumbnail van event post"
+
+# @ timetable
+#: timetable.php:298
+msgid "Event post box thumbnail"
+msgstr "Postvak thumbnail van de workshop"
+
+#: timetable.php:362
+msgid "Shortcode Generator"
+msgstr "Shortcode Generator"
+
+#: timetable.php:363
+msgid "Event Post Type"
+msgstr "Soort workshop"
+
+#: timetable.php:364
+msgid "Email config"
+msgstr "Email config"
+
+#: timetable.php:365
+msgid "Import Dummy Data"
+msgstr "Importeer Dummy Gegevens"
+
+#: timetable.php:398
+msgid "Please confirm that you want to delete event bookings."
+msgstr "Bevestig dat je de workshops wilt verwijderen."
+
+#: timetable.php:473
+msgid ""
+"<h2>Invalid event hour</h2>\n"
+"<p>Selected event hour doesn't exist.<br>Please select different event.</p>"
+msgstr ""
+"<h2> Ongeldig evenementuur </h2>\n"
+"<p> Geselecteerd evenementuur bestaat niet. <br> Selecteer een ander "
+"evenement. </p>"
+
+#: timetable.php:499
+msgid ""
+"<h2>Invalid event hour</h2><p>Selected event hour doesn't exist.<br>Please "
+"select different event.</p>"
+msgstr ""
+"<h2> Ongeldig evenementuur </h2> <p> Geselecteerd evenementuur bestaat niet. "
+"<br> Selecteer een ander evenement. </p>"
+
+#: timetable.php:552
+msgid "<p class=\"tt_guest_option "
+msgstr ""
+
+#: timetable.php:563
+msgid "<p class=\"tt_login_option "
+msgstr ""
+
+#: timetable.php:589
+msgid ""
+"<h2>Booking couldn't be made</h2>\n"
+"<p>Please accept terms and conditions checkbox.</p>"
+msgstr ""
+"<h2>Boeking kon niet gemaakt worden</h2>\n"
+"<p>Gelieve de algemene voorwaarden te accepteren.</p>"
+
+#: timetable.php:635
+msgid ""
+"<h2>Booking couldn't be made</h2>\n"
+"<p>No place available for selected event hour.</p>"
+msgstr ""
+"<h2> Boeking kon niet worden gemaakt </h2>\n"
+"<p> Geen plaats beschikbaar voor het geselecteerde evenementuur. </p>"
+
+#: timetable.php:646
+msgid ""
+"<h2>Booking couldn't be made</h2>\n"
+"<p>You've already reached maximum number of slots.</p>"
+msgstr ""
+"<h2> Boeking kon niet worden gemaakt </h2>\n"
+"<p> Je hebt het maximale aantal slots al bereikt. </p>"
+
+#: timetable.php:654
+msgid ""
+"<h2>Booking couldn't be made</h2>\n"
+"<p>You have selected too many slots.</p>"
+msgstr ""
+"<h2> Boeking kon niet worden gemaakt </h2>\n"
+"<p> U hebt te veel slots geselecteerd. </p>"
+
+#: timetable.php:664
+msgid ""
+"<h2>Error</h2>\n"
+"<p>You must fill name field.</p>"
+msgstr ""
+"<H2> Fout </ h2>\n"
+"<p> U moet het naamveld invullen. </p>"
+
+#: timetable.php:671
+msgid ""
+"<h2>Error</h2>\n"
+"<p>You must fill email field.</p>"
+msgstr ""
+"<H2> Fout </ h2>\n"
+"<p> U moet een e-mailveld invullen. </p>"
+
+#: timetable.php:678
+msgid ""
+"<h2>Error</h2>\n"
+"<p>Please provide valid email.</p>"
+msgstr ""
+"<H2> Fout </ h2>\n"
+"<p> Geef een geldig e-mailadres op. </p>"
+
+#: timetable.php:685
+msgid ""
+"<h2>Error</h2>\n"
+"<p>You must fill phone field.</p>"
+msgstr ""
+"<H2> Fout </ h2>\n"
+"<p> U moet het telefoonveld invullen. </p>"
+
+#: timetable.php:692
+msgid ""
+"<h2>Error</h2>\n"
+"<p>You must fill message field.</p>"
+msgstr ""
+"<H2> Fout </ h2>\n"
+"<p> U moet een berichtveld invullen. </p>"
+
+#: timetable.php:723
+msgid ""
+"<h2>Booking couldn't be made</h2>\n"
+"<p>You can't register for this event hour.</p>"
+msgstr ""
+"<h2> Boeking kon niet worden gemaakt </h2>\n"
+"<p> U kunt zich niet registreren voor dit evenementuur. </p>"
+
+#: timetable.php:855
+#, fuzzy, php-format
+msgid "Cancel booking #%d"
+msgstr "Geannuleerde boekingen"
+
+#: timetable.php:858
+#, fuzzy
+msgid "Cancel all bookings"
+msgstr "Geannuleerde boekingen"
+
+#: timetable.php:938
+msgid "Email message sent."
+msgstr "E-mail verzonden."
+
+#: timetable.php:942
+#, php-format
+msgid "Email message not sent.<br>%s"
+msgstr "E-mailbericht niet verzonden. <br>% s"
+
+# @ timetable
+#: timetable.php:1027
+msgid ""
+"Import file: dummy-timetable.xml not found! Please upload import file "
+"manually into Media library. You can find this file inside zip archive "
+"downloaded from CodeCanyon."
+msgstr ""
+"Importbestand: dummy-timetable.xml niet gevonden! Upload het importbestand "
+"handmatig in de mediabibliotheek. U vindt dit bestand in het zip-archief dat "
+"is gedownload van CodeCanyon."
+
+# @ timetable
+#: timetable.php:1101
+msgid "Widgets data file not found! Please upload widgets data file manually."
+msgstr ""
+"Widgets-gegevensbestand niet gevonden! Upload het widgets-gegevensbestand "
+"handmatig."
+
+# @ timetable
+#: timetable.php:1242
+msgid ""
+"dummy-timetable.xml file content and widgets settings has been imported "
+"successfully!"
+msgstr ""
+"dummy-timetable.xml bestandsinhoud en widgets-instellingen zijn met succes "
+"geïmporteerd!"
+
+#: timetable.php:1253
+msgid "events"
+msgstr "workshops"
+
+#: timetable.php:1499 timetable.php:1541 timetable.php:1602
+msgid "Slots number"
+msgstr "Aantal leerlingen"
+
+#: timetable.php:1570
+msgid "Name *"
+msgstr "Naam (verplicht)"
+
+#: timetable.php:1579
+msgid "Email *"
+msgstr "Email (verplicht)"
+
+#: timetable.php:1589
+msgid "Phone *"
+msgstr "Telefoon *"
+
+#: timetable.php:1614
+msgid "Message *"
+msgstr "Aantal leerlingen*"
+
+# @ timetable
+#: widget-upcoming-events.php:12
+msgid "Upcoming Events"
+msgstr "Opkomende evenementen"
+
+# @ timetable
+#: widget-upcoming-events.php:197
+#, php-format
+msgid "No upcoming %s for today"
+msgstr "Geen opkomende %s voor vandaag"
+
+# @ timetable
+#: widget-upcoming-events.php:263
+msgid "Title"
+msgstr "Titel"
+
+# @ timetable
+#: widget-upcoming-events.php:267
+msgid "Title color"
+msgstr "Titel kleur"
+
+# @ timetable
+#: widget-upcoming-events.php:272
+msgid "Count"
+msgstr "Aantal"
+
+# @ timetable
+#: widget-upcoming-events.php:276
+msgid "Display settings"
+msgstr "Beeld instellingen"
+
+# @ timetable
+#: widget-upcoming-events.php:278
+msgid "today upcoming"
+msgstr "Opkomend vandaag"
+
+# @ timetable
+#: widget-upcoming-events.php:279
+msgid "all upcoming"
+msgstr "Alle kommenden"
+
+# @ timetable
+#: widget-upcoming-events.php:280
+msgid "current events"
+msgstr "Actuele evenementen"
+
+# @ timetable
+#: widget-upcoming-events.php:284
+msgid "All upcoming within next"
+msgstr "Opkomende in de volgende"
+
+# @ timetable
+#: widget-upcoming-events.php:285
+msgid "day(s)"
+msgstr "Dag(en)"
+
+# @ timetable
+#: widget-upcoming-events.php:320
+msgid "Time from"
+msgstr "Tijd van"
+
+# @ timetable
+#: widget-upcoming-events.php:322
+msgid "server"
+msgstr "Server"
+
+# @ timetable
+#: widget-upcoming-events.php:323
+msgid "database"
+msgstr "Database"
+
+# @ timetable
+#: widget-upcoming-events.php:327
+msgid "Timezone"
+msgstr "Tijdszone"
+
+# @ timetable
+#: widget-upcoming-events.php:329
+msgid "localtime"
+msgstr "Lokale tijd"
+
+# @ timetable
+#: widget-upcoming-events.php:330
+msgid "utc"
+msgstr "UTC-tijd"
+
+# @ timetable
+#: widget-upcoming-events.php:370
+msgid "Auto scroll"
+msgstr "Auto scroll"
+
+# @ timetable
+#: widget-upcoming-events.php:372 widget-upcoming-events.php:390
+msgid "no"
+msgstr "Nee"
+
+# @ timetable
+#: widget-upcoming-events.php:373 widget-upcoming-events.php:391
+msgid "yes"
+msgstr "Ja"
+
+# @ timetable
+#: widget-upcoming-events.php:377
+msgid "Custom event url"
+msgstr "Custom event url"
+
+#: widget-upcoming-events.php:381
+msgid "Event featured image"
+msgstr "Workshop uitgelichte afbeelding"
+
+#: widget-upcoming-events.php:383
+msgid "Hide"
+msgstr "Verberg"
+
+#: widget-upcoming-events.php:384
+msgid "Show"
+msgstr "Toon"
+
+# @ timetable
+#: widget-upcoming-events.php:395
+msgid "Background color"
+msgstr "Achtergrondkleur"
+
+# @ timetable
+#: widget-upcoming-events.php:400
+msgid "Hover background color"
+msgstr "Beweeg achtergrondkleur"
+
+# @ timetable
+#: widget-upcoming-events.php:405
+msgid "Text color"
+msgstr "Tekstkleur"
+
+# @ timetable
+#: widget-upcoming-events.php:410
+msgid "Hover text color"
+msgstr "Mouse-Over-Tekstkleur"
+
+# @ timetable
+#: widget-upcoming-events.php:415
+msgid "Item border color"
+msgstr "Randkleur van item"
+
+# @ timetable
+#: widget-upcoming-events.php:420
+msgid "Hover item border color"
+msgstr "Randkleur van item hover"
+
+#~ msgid "\">Don't have an account? <a href=\"%s\">Continue as guest</a></p>"
+#~ msgstr ""
+#~ "\"> Heb je geen account? <a href=\"%s\"> Doorgaan als gast </a> </p>"
+
+#~ msgid "\">Got an account? <a href=\"%s\">Login</a></p>"
+#~ msgstr "\">Hebt u een account? <a href=\"%s\">Inloggen</a></p>"
+
+#~ msgid "Annuleer de workshop"
+#~ msgstr "Annuleer de workshop"
+
+#~ msgid "Annuleer alle boekingen"
+#~ msgstr "Annuleer alle boekingen"
+
+#~ msgid "Timetable Responsive Schedule For WordPress"
+#~ msgstr "Tijdschema Responsive Schedule voor WordPress"
+
+#~ msgid ""
+#~ "Timetable Responsive Schedule For WordPress is a powerful and easy-to-use "
+#~ "schedule plugin for WordPress. It will help you to create a timetable "
+#~ "view of your events in minutes. It is perfect for gym classes, school or "
+#~ "kindergarten classes, medical departments, nightclubs, lesson plans, meal "
+#~ "plans etc. It comes with Events Manager, Event Occurrences Shortcode, "
+#~ "Timetable Shortcode Generator and Upcoming Events Widget."
+#~ msgstr ""
+#~ "Tijdschema Responsive Schedule For WordPress is een krachtige en "
+#~ "gemakkelijk te gebruiken planningsplug-in voor WordPress. Het helpt je om "
+#~ "binnen enkele minuten een overzicht van je evenementen te maken. Het is "
+#~ "perfect voor gymlessen, school- of kleuterklassen, medische afdelingen, "
+#~ "nachtclubs, lesplannen, maaltijdplannen enz. Het wordt geleverd met "
+#~ "evenementenmanager, shortcodes voor evenementen, tijdcode shortcode-"
+#~ "generator en aankomende evenementenwidget."
+
+#~ msgid ""
+#~ "https://codecanyon.net/item/timetable-responsive-schedule-for-"
+#~ "wordpress/7010836?ref=QuanticaLabs"
+#~ msgstr ""
+#~ "https://codecanyon.net/item/timetable-responsive-schedule-for-"
+#~ "wordpress/7010836?ref=QuanticaLabs"
+
+#~ msgid "QuanticaLabs"
+#~ msgstr "QuanticaLabs"
+
+#~ msgid "https://codecanyon.net/user/QuanticaLabs/portfolio?ref=QuanticaLabs"
+#~ msgstr "https://codecanyon.net/user/QuanticaLabs/portfolio?ref=QuanticaLabs"

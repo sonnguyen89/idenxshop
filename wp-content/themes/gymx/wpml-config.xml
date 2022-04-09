@@ -1,0 +1,249 @@
+<wpml-config>
+    <shortcodes>
+        <shortcode>
+            <tag>ttbase_button</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_callout</tag>
+            <attributes>
+                <attribute>caption</attribute>
+                <attribute>button_text</attribute>
+                <attribute>button_title</attribute>
+                <attribute>button_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_content_image</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_counter</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>number</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_half_carousel_content</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_heading</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_highlight</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_icon_box</tag>
+            <attributes>
+                <attribute>heading</attribute>
+                <attribute>subtitle</attribute>
+                <attribute>url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_icon</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_imagebox</tag>
+            <attributes>
+                <attribute>heading</attribute>
+                <attribute>subtitle</attribute>
+                <attribute>url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_image_carousel_content</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_gallery_item</tag>
+            <attributes>
+                <attribute>caption</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_item</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_modal</tag>
+            <attributes>
+                <attribute>button_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_post_grid</tag>
+            <attributes>
+                <attribute>read_more_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_pricing_table</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>small</attribute>
+                <attribute>amount</attribute>
+                <attribute>button_text</attribute>
+                <attribute>button_url</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_progressbar</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_service_grid</tag>
+            <attributes>
+                <attribute>read_more_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_table</tag>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_tabs_content</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_team_grid</tag>
+            <attributes>
+                <attribute>read_more_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>ttbase_intro_text</tag>
+        </shortcode>
+        <shortcode>
+            <tag>vc_column_text</tag>
+        </shortcode>
+        <shortcode>
+            <tag>vc_text_separator</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_message</tag>
+        </shortcode>
+        <shortcode>
+            <tag>vc_toggle</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_tta_section</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_custom_heading</tag>
+            <attributes>
+                <attribute>text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag encoding="base64">vc_raw_html</tag>
+        </shortcode>
+        <shortcode>
+            <tag>vc_progress_bar</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_pie</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>label_value</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_round_chart</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_btn</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_cta</tag>
+            <attributes>
+                <attribute>h2</attribute>
+                <attribute>h4</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_line_chart</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+    </shortcodes>
+    <custom-types>
+        <custom-type translate="1">classes</custom-type>
+        <custom-type translate="1">events</custom-type>
+        <custom-type translate="1">trainers</custom-type>
+        <custom-type translate="1">gymx_weekdays</custom-type>
+        <custom-type translate="1">timetable_weekdays</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">class_category</taxonomy>
+        <taxonomy translate="1">events_category</taxonomy>
+        <taxonomy translate="1">trainers_category</taxonomy>
+        <taxonomy translate="1">testimonial_category</taxonomy>
+    </taxonomies>
+    <language-switcher-settings>
+        <key name="icl_lang_sel_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#d2d2d2</key>
+        </key>
+        <key name="icl_lang_sel_footer_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#d2d2d2</key>
+        </key>                
+        <key name="icl_language_switcher_sidebar">0</key>        
+        <key name="icl_widget_title_show">0</key>
+        <key name="icl_lang_sel_type">dropdown</key>
+        <key name="icl_lso_link_empty">0</key>
+        <key name="icl_lso_flags">0</key>
+        <key name="icl_lso_native_lang">1</key>
+        <key name="icl_lso_display_lang">1</key>
+        <key name="icl_lang_sel_footer">0</key>
+        <key name="icl_post_availability">0</key>
+        <key name="icl_post_availability_position">below</key>
+        <key name="icl_post_availability_text">This post is also available in: %s</key>                
+    </language-switcher-settings>
+</wpml-config>

@@ -1,0 +1,23 @@
+.ttbase_vc_icon {
+	background-image: url(../images/ttbase_vc_icon.png) !important;
+}
+
+.ttbase-font-awesome-icon-preview,
+.ttbase-streamline-icon-preview,
+.ttbase-iconsmind-icon-preview{
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.ttbase-font-awesome-icon-select-window span,
+.ttbase-streamline-icon-select-window span{
+    display:inline-block;
+    font-size:18px;
+    padding:5px;
+}
+.ttbase-iconsmind-icon-select-window span{
+    display:inline-block;
+    font-size:20px;
+    color:#000000;
+    padding:5px;
+}

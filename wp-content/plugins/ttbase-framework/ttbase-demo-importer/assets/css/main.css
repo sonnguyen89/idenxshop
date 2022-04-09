@@ -1,0 +1,115 @@
+/* Overriding WordPress native styles */
+
+.ocdi h2 {
+	text-align: inherit;
+}
+
+.ocdi h2:first-child,
+.ocdi h3:first-child {
+	margin-top: 0;
+}
+
+.ocdi hr {
+	margin: 2.62em 0;
+}
+
+.feature-section + hr {
+	margin-top: 0;
+}
+
+#wpbody select {
+	height: auto;
+	padding: .62em;
+	line-height: inherit;
+}
+
+.ocdi .notice {
+	display: block !important;
+}
+
+/* Plugin elements */
+
+.ocdi__demo-import-files {
+	width: 100%;
+}
+
+.ocdi__demo-import-preview-image-message {
+	font-style: italic;
+}
+
+/* Plugin title */
+
+.ocdi__title:before {
+	width: auto;
+	height: auto;
+	font-size: inherit;
+}
+
+/* Plugin intro text */
+
+.ocdi__intro-text ul {
+	padding: 0 4%;
+	list-style-type: square;
+}
+
+/* Plugin multi select import and Plugin file upload containers */
+
+.ocdi__file-upload,
+.ocdi__multi-select-import,
+.ocdi__demo-import-notice:not(:empty) {
+	padding: 4%;
+	margin: 1.62em 0;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+}
+
+.ocdi__file-upload {
+	margin: 0;
+	margin-bottom: -1px;
+}
+
+.ocdi__file-upload span {
+	font-size: .81em;
+	font-weight: normal;
+	opacity: .66;
+}
+
+.ocdi__demo-import-notice:not(:empty) {
+	border: 0;
+	border-left: 4px solid #00a0d2;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+[dir="rtl"] .ocdi__demo-import-notice:not(:empty) {
+	border: 0;
+	border-right: 4px solid #00a0d2;
+}
+
+/* Plugin button */
+
+.ocdi__button-container {
+	margin-top: 1.62em;
+}
+
+/* AJAX loader */
+
+.ocdi__ajax-loader {
+	font-size: 1.5em;
+	display: none;
+}
+
+.ocdi__ajax-loader .spinner {
+	display: inline-block;
+	float: none;
+	visibility: visible;
+	margin-bottom: 6px;
+}
+
+.demoimport-importer-note{
+	background: #f3f3f3;
+	padding: 20px 20px 20px 20px;
+	border-radius: 4px;
+	margin: 30px 0;
+}
+
