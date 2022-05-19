@@ -1,0 +1,41 @@
+form.cart.single-ajax button {
+    position: relative;
+}
+
+form.cart.single-ajax button svg {
+    color: #fff;
+}
+
+svg.loader-image.preloader.added {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+	top: 24%;
+    left: 40%;
+}
+
+.woocommerce-message , .woocommerce-error {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.woocommerce-message a {
+    font-weight: 500;
+}
+
+.klb-message {
+	background:#f7f7f7;
+}
+
+.ajax_quick_view .klb-message {
+	background:none;
+}
+
+.ajax_quick_view .woocommerce-message , .ajax_quick_view .woocommerce-error {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}	

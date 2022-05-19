@@ -1,0 +1,55 @@
+/* gdpr */
+.gdpr-content {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0.9375rem 0;
+  color: #fff;
+  background-color: #000;
+  z-index: 1000;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  will-change: opacity, transform;
+}
+.gdpr-content .gdpr-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.gdpr-content p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color:#fff;
+}
+.gdpr-content a {
+  font-size: 0.875rem;
+  height: 2.125rem;
+  margin-left: 0.625rem;
+}
+
+@media screen and (max-width: 64rem) {
+  .gdpr-content.mobile-menu-active {
+    bottom: 60px;
+  }
+}
+
+
+.gdpr-content.active {
+    transform: translate(0px, 0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+

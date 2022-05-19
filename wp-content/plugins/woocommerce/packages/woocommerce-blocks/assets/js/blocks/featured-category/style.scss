@@ -1,10 +1,17 @@
+.wp-block-woocommerce-featured-category {
+	background-color: $gray-900;
+	border-color: transparent;
+	color: #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
 .wc-block-featured-category {
 	position: relative;
-	background-color: $gray-900;
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	margin: 0 0 1.5em 0;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,6 +70,7 @@
 	.wc-block-featured-category__description,
 	.wc-block-featured-category__price,
 	.wc-block-featured-category__link {
+		color: inherit;
 		width: 100%;
 		padding: 0 48px 16px 48px;
 		z-index: 1;
@@ -71,12 +79,17 @@
 	.wc-block-featured-category__title {
 		margin-top: 0;
 
+		div {
+			color: inherit;
+		}
+
 		&::before {
 			display: none;
 		}
 	}
 
 	.wc-block-featured-category__description {
+		color: inherit;
 		p {
 			margin: 0;
 		}
@@ -94,6 +107,7 @@
 		bottom: 0;
 		right: 0;
 		background-color: inherit;
+		border-radius: inherit;
 		opacity: 0.5;
 		z-index: 1;
 	}
@@ -107,7 +121,7 @@
 	// Apply max-width to floated items that have no intrinsic width
 	&.alignleft,
 	&.alignright {
-		max-width: $content-width / 2;
+		max-width: $content-width * 0.5;
 		width: 100%;
 	}
 

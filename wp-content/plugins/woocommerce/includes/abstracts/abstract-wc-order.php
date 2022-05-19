@@ -10,6 +10,8 @@
  * @package     WooCommerce\Classes
  */
 
+use Automattic\WooCommerce\Proxies\LegacyProxy;
+use Automattic\WooCommerce\Utilities\ArrayUtil;
 use Automattic\WooCommerce\Utilities\NumberUtil;
 
 defined( 'ABSPATH' ) || exit;
@@ -198,7 +200,17 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			do_action( 'woocommerce_after_' . $this->object_type . '_object_save', $this, $this->data_store );
 
 		} catch ( Exception $e ) {
-			$this->handle_exception( $e, __( 'Error saving order.', 'woocommerce' ) );
+			$message_id = $this->get_id() ? $this->get_id() : __( '(no ID)', 'woocommerce' );
+			$this->handle_exception(
+				$e,
+				wp_kses_post(
+					sprintf(
+						/* translators: 1: Order ID or "(no ID)" if not known. */
+						__( 'Error saving order ID %1$s.', 'woocommerce' ),
+						$message_id
+					)
+				)
+			);
 		}
 
 		return $this->get_id();
@@ -540,15 +552,17 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 		$old_status = $this->get_status();
 		$new_status = 'wc-' === substr( $new_status, 0, 3 ) ? substr( $new_status, 3 ) : $new_status;
 
+		$status_exceptions = array( 'auto-draft', 'trash' );
+
 		// If setting the status, ensure it's set to a valid status.
 		if ( true === $this->object_read ) {
 			// Only allow valid new status.
-			if ( ! in_array( 'wc-' . $new_status, $this->get_valid_statuses(), true ) && 'trash' !== $new_status ) {
+			if ( ! in_array( 'wc-' . $new_status, $this->get_valid_statuses(), true ) && ! in_array( $new_status, $status_exceptions, true ) ) {
 				$new_status = 'pending';
 			}
 
 			// If the old status is set but unknown (e.g. draft) assume its pending for action usage.
-			if ( $old_status && ! in_array( 'wc-' . $old_status, $this->get_valid_statuses(), true ) && 'trash' !== $old_status ) {
+			if ( $old_status && ! in_array( 'wc-' . $old_status, $this->get_valid_statuses(), true ) && ! in_array( $old_status, $status_exceptions, true ) ) {
 				$old_status = 'pending';
 			}
 		}
@@ -875,7 +889,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 *
 	 * @since  3.0.0
 	 * @param  int  $item_id ID of item to get.
-	 * @param  bool $load_from_db Prior to 3.2 this item was loaded direct from WC_Order_Factory, not this object. This param is here for backwards compatility with that. If false, uses the local items variable instead.
+	 * @param  bool $load_from_db Prior to 3.2 this item was loaded direct from WC_Order_Factory, not this object. This param is here for backwards compatibility with that. If false, uses the local items variable instead.
 	 * @return WC_Order_Item|false
 	 */
 	public function get_item( $item_id, $load_from_db = true ) {
@@ -1137,7 +1151,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 
 		$data_store = $coupon->get_data_store();
 
-		// Check specific for guest checkouts here as well since WC_Cart handles that seperately in check_customer_coupons.
+		// Check specific for guest checkouts here as well since WC_Cart handles that separately in check_customer_coupons.
 		if ( $data_store && 0 === $this->get_customer_id() ) {
 			$usage_count = $data_store->get_usage_by_email( $coupon, $this->get_billing_email() );
 			if ( 0 < $coupon->get_usage_limit_per_user() && $usage_count >= $coupon->get_usage_limit_per_user() ) {
@@ -1164,7 +1178,12 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			$used_by = $this->get_billing_email();
 		}
 
-		$coupon->increase_usage_count( $used_by );
+		$order_data_store = $this->get_data_store();
+		if ( $order_data_store->get_recorded_coupon_usage_counts( $this ) ) {
+			$coupon->increase_usage_count( $used_by );
+		}
+
+		wc_update_coupon_usage_counts( $this->get_id() );
 
 		return true;
 	}
@@ -1244,7 +1263,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			}
 
 			/**
-			 * Allow developers to filter this coupon before it get's re-applied to the order.
+			 * Allow developers to filter this coupon before it gets re-applied to the order.
 			 *
 			 * @since 3.2.0
 			 */
@@ -1316,6 +1335,16 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 				if ( ! $item_id ) {
 					$coupon_item = new WC_Order_Item_Coupon();
 					$coupon_item->set_code( $coupon_code );
+
+					// Add coupon data.
+					$coupon_id = wc_get_coupon_id_by_code( $coupon_code );
+					$coupon    = new WC_Coupon( $coupon_id );
+
+					// Avoid storing used_by - it's not needed and can get large.
+					$coupon_data = $coupon->get_data();
+					unset( $coupon_data['used_by'] );
+
+					$coupon_item->add_meta_data( 'coupon_data', $coupon_data );
 				} else {
 					$coupon_item = $this->get_item( $item_id, false );
 				}
@@ -1361,14 +1390,23 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 */
 	public function add_product( $product, $qty = 1, $args = array() ) {
 		if ( $product ) {
+			$order = ArrayUtil::get_value_or_default( $args, 'order' );
+			$total = wc_get_price_excluding_tax(
+				$product,
+				array(
+					'qty'   => $qty,
+					'order' => $order,
+				)
+			);
+
 			$default_args = array(
 				'name'         => $product->get_name(),
 				'tax_class'    => $product->get_tax_class(),
 				'product_id'   => $product->is_type( 'variation' ) ? $product->get_parent_id() : $product->get_id(),
 				'variation_id' => $product->is_type( 'variation' ) ? $product->get_id() : 0,
 				'variation'    => $product->is_type( 'variation' ) ? $product->get_attributes() : array(),
-				'subtotal'     => wc_get_price_excluding_tax( $product, array( 'qty' => $qty ) ),
-				'total'        => wc_get_price_excluding_tax( $product, array( 'qty' => $qty ) ),
+				'subtotal'     => $total,
+				'total'        => $total,
 				'quantity'     => $qty,
 			);
 		} else {
@@ -1392,7 +1430,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			}
 		}
 
-		$item = new WC_Order_Item_Product();
+		$item = wc_get_container()->get( LegacyProxy::class )->get_instance_of( WC_Order_Item_Product::class );
 		$item->set_props( $args );
 		$item->set_backorder_meta();
 		$item->set_order_id( $this->get_id() );

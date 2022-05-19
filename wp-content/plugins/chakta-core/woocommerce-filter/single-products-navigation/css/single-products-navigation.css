@@ -1,0 +1,92 @@
+.klb-products-nav {
+    float:right;
+    display: flex;
+    align-items: center;
+	position:relative;
+	margin-top:5px;
+
+}
+.klb-products-nav .klb-back-btn, .klb-products-nav .product-btn>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 20px;
+    color: #333;
+	text-decoration:none;
+	font-weight: 600;
+}
+
+.klb-products-nav .klb-back-btn:after {
+    font-size: 21px;
+    content: "\f009";
+    font-family: "Font Awesome 5 Pro";
+}
+
+.klb-products-nav .product-next>a span:before {
+    content: '\f054';
+    font-family: "Font Awesome 5 Pro";
+}
+
+.klb-products-nav .product-prev>a span:before {
+    content: '\f053';
+    font-family: "Font Awesome 5 Pro";
+}
+.klb-products-nav .product-btn:hover>.wrapper-short {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+.klb-products-nav .wrapper-short {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 350;
+    visibility: hidden;
+    padding-top: 13px;
+    min-width: 240px;
+    opacity: 0;
+    transition: opacity .1s ease .1s, visibility .1s ease .1s;
+}
+.klb-products-nav .product-short {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFF;
+    box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+}
+.klb-products-nav .product-short-description {
+    padding: 10px 15px;
+	margin-bottom:0px !important;
+}
+.klb-products-nav .product-short-description .klb-entities-title {
+    margin-bottom: 7px;
+    font-size: 14px;
+	display: block;
+    color: #333;
+    word-wrap: break-word;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.klb-products-nav .product-short-description .klb-entities-title:hover {
+    color: #ff4545;
+
+}
+.klb-products-nav .product-short-description .price {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+	margin-bottom:0px !important;
+	color:#ff4545;
+	font-weight: 500
+}
+
+.klb-products-nav .product-short-image img {
+    max-width: 90px;
+	height: auto;
+}
+
+.klb-products-nav .product-short-description .price del{
+	color: #696969;
+	font-size:12px;
+}

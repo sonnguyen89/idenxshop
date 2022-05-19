@@ -26,17 +26,15 @@ import type {
 	CartResponseBillingAddress,
 	CartResponseShippingAddress,
 	CartResponseCouponItem,
-	CartResponseCouponItemWithLabel,
+	CartResponseCoupons,
 } from '@woocommerce/types';
-import {
-	emptyHiddenAddressFields,
-	fromEntriesPolyfill,
-} from '@woocommerce/base-utils';
+import { emptyHiddenAddressFields } from '@woocommerce/base-utils';
 
 /**
  * Internal dependencies
  */
 import { useEditorContext } from '../../providers/editor-context';
+import { useStoreCartEventListeners } from './use-store-cart-event-listeners';
 
 declare module '@wordpress/html-entities' {
 	// eslint-disable-next-line @typescript-eslint/no-shadow
@@ -84,7 +82,7 @@ const defaultCartTotals: CartResponseTotals = {
 const decodeValues = (
 	object: Record< string, unknown >
 ): Record< string, unknown > =>
-	fromEntriesPolyfill(
+	Object.fromEntries(
 		Object.entries( object ).map( ( [ key, value ] ) => [
 			key,
 			decodeEntities( value ),
@@ -110,7 +108,7 @@ export const defaultCartData: StoreCart = {
 	billingAddress: defaultBillingAddress,
 	shippingAddress: defaultShippingAddress,
 	shippingRates: EMPTY_SHIPPING_RATES,
-	shippingRatesLoading: false,
+	isLoadingRates: false,
 	cartHasCalculatedShipping: false,
 	paymentRequirements: EMPTY_PAYMENT_REQUIREMENTS,
 	receiveCart: () => undefined,
@@ -121,14 +119,15 @@ export const defaultCartData: StoreCart = {
  * This is a custom hook that is wired up to the `wc/store/cart` data
  * store.
  *
- * @param {Object} options                An object declaring the various
- *                                        collection arguments.
- * @param {boolean} options.shouldSelect  If false, the previous results will be
- *                                        returned and internal selects will not
- *                                        fire.
+ * @param {Object}  options              An object declaring the various
+ *                                       collection arguments.
+ * @param {boolean} options.shouldSelect If false, the previous results will be
+ *                                       returned and internal selects will not
+ *                                       fire.
  *
  * @return {StoreCart} Object containing cart data.
  */
+
 export const useStoreCart = (
 	options: { shouldSelect: boolean } = { shouldSelect: true }
 ): StoreCart => {
@@ -136,6 +135,10 @@ export const useStoreCart = (
 	const previewCart = previewData?.previewCart;
 	const { shouldSelect } = options;
 	const currentResults = useRef();
+
+	// This will keep track of jQuery and DOM events triggered by other blocks
+	// or components and will invalidate the store resolution accordingly.
+	useStoreCartEventListeners();
 
 	const results: StoreCart = useSelect(
 		( select, { dispatch } ) => {
@@ -160,7 +163,7 @@ export const useStoreCart = (
 					shippingAddress: defaultShippingAddress,
 					extensions: EMPTY_EXTENSIONS,
 					shippingRates: previewCart.shipping_rates,
-					shippingRatesLoading: false,
+					isLoadingRates: false,
 					cartHasCalculatedShipping:
 						previewCart.has_calculated_shipping,
 					paymentRequirements: previewCart.paymentRequirements,
@@ -178,7 +181,8 @@ export const useStoreCart = (
 			const cartIsLoading = ! store.hasFinishedResolution(
 				'getCartData'
 			);
-			const shippingRatesLoading = store.isCustomerDataUpdating();
+
+			const isLoadingRates = store.isCustomerDataUpdating();
 			const { receiveCart } = dispatch( storeKey );
 			const billingAddress = decodeValues( cartData.billingAddress );
 			const shippingAddress = cartData.needsShipping
@@ -194,7 +198,7 @@ export const useStoreCart = (
 			// Add a text property to the coupon to allow extensions to modify
 			// the text used to display the coupon, without affecting the
 			// functionality when it comes to removing the coupon.
-			const cartCoupons: CartResponseCouponItemWithLabel[] =
+			const cartCoupons: CartResponseCoupons =
 				cartData.coupons.length > 0
 					? cartData.coupons.map(
 							( coupon: CartResponseCouponItem ) => ( {
@@ -220,7 +224,7 @@ export const useStoreCart = (
 				shippingAddress: emptyHiddenAddressFields( shippingAddress ),
 				extensions: cartData.extensions,
 				shippingRates: cartData.shippingRates,
-				shippingRatesLoading,
+				isLoadingRates,
 				cartHasCalculatedShipping: cartData.hasCalculatedShipping,
 				paymentRequirements: cartData.paymentRequirements,
 				receiveCart,

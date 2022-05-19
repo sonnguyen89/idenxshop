@@ -6,7 +6,7 @@ abstract class WPCF7_WelcomePanelColumn {
 	abstract protected function title();
 	abstract protected function content();
 
-	public function print() {
+	public function print_content() {
 		$icon = sprintf(
 			'<span class="dashicons dashicons-%s" aria-hidden="true"></span>',
 			esc_attr( $this->icon() )
@@ -200,7 +200,7 @@ function wpcf7_welcome_panel() {
 		$columns[] = new WPCF7_WelcomePanelColumn_Integration();
 	}
 
-	$classes = 'welcome-panel';
+	$classes = 'wpcf7-welcome-panel';
 
 	$vers = (array) get_user_meta( get_current_user_id(),
 		'wpcf7_hide_welcome_panel_on', true
@@ -211,7 +211,7 @@ function wpcf7_welcome_panel() {
 	}
 
 ?>
-<div id="welcome-panel" class="<?php echo esc_attr( $classes ); ?>">
+<div id="wpcf7-welcome-panel" class="<?php echo esc_attr( $classes ); ?>">
 	<?php wp_nonce_field( 'wpcf7-welcome-panel-nonce', 'welcomepanelnonce', false ); ?>
 	<a class="welcome-panel-close" href="<?php echo esc_url( menu_page_url( 'wpcf7', false ) ); ?>"><?php echo esc_html( __( 'Dismiss', 'contact-form-7' ) ); ?></a>
 
@@ -220,7 +220,7 @@ function wpcf7_welcome_panel() {
 <?php
 
 	foreach ( $columns as $column ) {
-		$column->print();
+		$column->print_content();
 	}
 
 ?>

@@ -7,25 +7,17 @@ import type { CheckoutStateContextState, PaymentResultDataType } from './types';
 
 /**
  * Reducer for the checkout state
- *
- * @param {Object} state  Current state.
- * @param {Object} action Incoming action object.
- * @param {string} action.url URL passed in.
- * @param {string} action.type Type of action.
- * @param {string} action.customerId Customer ID.
- * @param {string} action.orderId Order ID.
- * @param {Array} action.orderNotes Order notes.
- * @param {boolean} action.shouldCreateAccount True if shopper has requested a user account (sign-up checkbox).
- * @param {Object} action.data Other action payload.
  */
 export const reducer = (
 	state = DEFAULT_STATE,
 	{
-		url,
+		redirectUrl,
 		type,
 		customerId,
 		orderId,
 		orderNotes,
+		extensionData,
+		useShippingAsBilling,
 		shouldCreateAccount,
 		data,
 	}: ActionType
@@ -46,10 +38,10 @@ export const reducer = (
 			break;
 		case ACTION.SET_REDIRECT_URL:
 			newState =
-				url !== undefined && url !== state.redirectUrl
+				redirectUrl !== undefined && redirectUrl !== state.redirectUrl
 					? {
 							...state,
-							redirectUrl: url,
+							redirectUrl,
 					  }
 					: state;
 			break;
@@ -66,11 +58,8 @@ export const reducer = (
 					? {
 							...state,
 							status: STATUS.COMPLETE,
-							// @todo Investigate why redirectURL could be non-truthy and whether this would cause a bug if multiple gateways were used for payment e.g. 1st set the redirect URL but failed, and then the 2nd did not provide a redirect URL and succeeded.
 							redirectUrl:
-								data !== undefined &&
-								typeof data.redirectUrl === 'string' &&
-								data.redirectUrl
+								typeof data?.redirectUrl === 'string'
 									? data.redirectUrl
 									: state.redirectUrl,
 					  }
@@ -164,6 +153,17 @@ export const reducer = (
 					  }
 					: state;
 			break;
+		case ACTION.SET_SHIPPING_ADDRESS_AS_BILLING_ADDRESS:
+			if (
+				useShippingAsBilling !== undefined &&
+				useShippingAsBilling !== state.useShippingAsBilling
+			) {
+				newState = {
+					...state,
+					useShippingAsBilling,
+				};
+			}
+			break;
 		case ACTION.SET_SHOULD_CREATE_ACCOUNT:
 			if (
 				shouldCreateAccount !== undefined &&
@@ -180,6 +180,17 @@ export const reducer = (
 				newState = {
 					...state,
 					orderNotes,
+				};
+			}
+			break;
+		case ACTION.SET_EXTENSION_DATA:
+			if (
+				extensionData !== undefined &&
+				state.extensionData !== extensionData
+			) {
+				newState = {
+					...state,
+					extensionData,
 				};
 			}
 			break;

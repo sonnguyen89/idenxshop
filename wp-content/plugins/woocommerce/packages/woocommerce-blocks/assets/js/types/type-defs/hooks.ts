@@ -11,6 +11,7 @@ import type {
 	CartResponseBillingAddress,
 	CartResponseShippingRate,
 	CartResponse,
+	CartResponseCoupons,
 } from './cart-response';
 import type { ResponseError } from '../../data/types';
 export interface StoreCartItemQuantity {
@@ -31,7 +32,7 @@ export interface StoreCartCoupon {
 }
 
 export interface StoreCart {
-	cartCoupons: Array< CartResponseCouponItem >;
+	cartCoupons: CartResponseCoupons;
 	cartItems: Array< CartResponseItem >;
 	cartFees: Array< CartResponseFeeItem >;
 	cartItemsCount: number;
@@ -46,8 +47,16 @@ export interface StoreCart {
 	shippingAddress: CartResponseShippingAddress;
 	shippingRates: Array< CartResponseShippingRate >;
 	extensions: Record< string, unknown >;
-	shippingRatesLoading: boolean;
+	isLoadingRates: boolean;
 	cartHasCalculatedShipping: boolean;
 	paymentRequirements: Array< string >;
 	receiveCart: ( cart: CartResponse ) => void;
 }
+
+export type Query = {
+	catalog_visibility: 'catalog';
+	per_page: number;
+	page: number;
+	orderby: string;
+	order: string;
+};

@@ -37,8 +37,11 @@
 }
 @mixin reset {
 	margin: 0;
-	padding: 0;
-	border: 0;
+	/* Use !important to prevent theme input styles from breaking the component.
+	Reference https://github.com/woocommerce/woocommerce-gutenberg-products-block/issues/3902
+	*/
+	padding: 0 !important;
+	border: 0 !important;
 	outline: none;
 	background: transparent;
 	-webkit-appearance: none;
@@ -60,8 +63,7 @@
 		}
 	}
 
-	&.is-loading,
-	&.is-disabled {
+	&.is-loading.is-disabled {
 		.wc-block-components-price-slider__range-input-wrapper,
 		.wc-block-components-price-slider__amount,
 		.wc-block-components-price-slider__button {
@@ -264,8 +266,7 @@
 	}
 
 	.wc-block-components-price-slider {
-		&.is-loading,
-		&.is-disabled {
+		&.is-loading.is-disabled {
 			.wc-block-components-price-slider__range-input-wrapper {
 				@include placeholder();
 				box-shadow: none;

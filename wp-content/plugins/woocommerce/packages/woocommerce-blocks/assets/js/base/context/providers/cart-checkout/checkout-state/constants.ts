@@ -1,7 +1,8 @@
 /**
  * External dependencies
  */
-import { getSetting } from '@woocommerce/settings';
+import { getSetting, EnteredAddress } from '@woocommerce/settings';
+import { isSameAddress } from '@woocommerce/base-utils';
 
 /**
  * Internal dependencies
@@ -26,15 +27,17 @@ export enum STATUS {
 	AFTER_PROCESSING = 'after_processing',
 }
 
-const preloadedApiRequests = getSetting( 'preloadedApiRequests', {} ) as Record<
+const preloadedCheckoutData = getSetting( 'checkoutData', {} ) as Record<
 	string,
-	{ body: Record< string, unknown > }
+	unknown
 >;
 
 const checkoutData = {
 	order_id: 0,
 	customer_id: 0,
-	...( preloadedApiRequests[ '/wc/store/checkout' ]?.body || {} ),
+	billing_address: {} as EnteredAddress,
+	shipping_address: {} as EnteredAddress,
+	...( preloadedCheckoutData || {} ),
 };
 
 export const DEFAULT_CHECKOUT_STATE_DATA: CheckoutStateContextType = {
@@ -48,6 +51,7 @@ export const DEFAULT_CHECKOUT_STATE_DATA: CheckoutStateContextType = {
 		setCustomerId: ( id ) => void id,
 		setOrderId: ( id ) => void id,
 		setOrderNotes: ( orderNotes ) => void orderNotes,
+		setExtensionData: ( extensionData ) => void extensionData,
 	},
 	onSubmit: () => void null,
 	isComplete: false,
@@ -67,8 +71,11 @@ export const DEFAULT_CHECKOUT_STATE_DATA: CheckoutStateContextType = {
 	onCheckoutValidationBeforeProcessing: () => () => void null,
 	hasOrder: false,
 	isCart: false,
+	useShippingAsBilling: false,
+	setUseShippingAsBilling: ( value ) => void value,
 	shouldCreateAccount: false,
 	setShouldCreateAccount: ( value ) => void value,
+	extensionData: {},
 };
 
 export const DEFAULT_STATE: CheckoutStateContextState = {
@@ -79,6 +86,11 @@ export const DEFAULT_STATE: CheckoutStateContextState = {
 	orderId: checkoutData.order_id,
 	orderNotes: '',
 	customerId: checkoutData.customer_id,
+	useShippingAsBilling: isSameAddress(
+		checkoutData.billing_address,
+		checkoutData.shipping_address
+	),
 	shouldCreateAccount: false,
 	processingResponse: null,
+	extensionData: {},
 };

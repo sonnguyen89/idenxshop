@@ -21,7 +21,7 @@ import GridContentControl from '@woocommerce/editor-components/grid-content-cont
 import ProductsControl from '@woocommerce/editor-components/products-control';
 import ProductOrderbyControl from '@woocommerce/editor-components/product-orderby-control';
 import { gridBlockPreview } from '@woocommerce/resource-previews';
-import { Icon, widgets } from '@woocommerce/icons';
+import { Icon, stack } from '@wordpress/icons';
 
 /**
  * Component to handle edit mode of "Hand-picked Products".
@@ -127,7 +127,7 @@ class ProductsBlock extends Component {
 
 		return (
 			<Placeholder
-				icon={ <Icon srcElement={ widgets } /> }
+				icon={ <Icon icon={ stack } /> }
 				label={ __(
 					'Hand-picked Products',
 					'woocommerce'
@@ -169,7 +169,10 @@ class ProductsBlock extends Component {
 						controls={ [
 							{
 								icon: 'edit',
-								title: __( 'Edit' ),
+								title: __(
+									'Edit selected products',
+									'woocommerce'
+								),
 								onClick: () =>
 									setAttributes( { editMode: ! editMode } ),
 								isActive: editMode,

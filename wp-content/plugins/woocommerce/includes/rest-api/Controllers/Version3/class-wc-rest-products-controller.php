@@ -207,10 +207,7 @@ class WC_REST_Products_Controller extends WC_REST_Products_V2_Controller {
 			$args['post_type'] = $this->post_type;
 		}
 
-		$orderby = $request->get_param( 'orderby' );
-		$order   = $request->get_param( 'order' );
-
-		$ordering_args   = WC()->query->get_catalog_ordering_args( $orderby, $order );
+		$ordering_args   = WC()->query->get_catalog_ordering_args( $args['orderby'], $args['order'] );
 		$args['orderby'] = $ordering_args['orderby'];
 		$args['order']   = $ordering_args['order'];
 		if ( $ordering_args['meta_key'] ) {
@@ -1223,6 +1220,12 @@ class WC_REST_Products_Controller extends WC_REST_Products_V2_Controller {
 						),
 					),
 				),
+				'has_options'     => array(
+					'description' => __( 'Shows if the product needs to be configured before it can be bought.', 'woocommerce' ),
+					'type'        => 'boolean',
+					'context'     => array( 'view', 'edit' ),
+					'readonly'    => true,
+				),
 				'attributes'            => array(
 					'description' => __( 'List of attributes.', 'woocommerce' ),
 					'type'        => 'array',
@@ -1383,6 +1386,9 @@ class WC_REST_Products_Controller extends WC_REST_Products_V2_Controller {
 			$fields = $this->get_fields_for_response( $this->request );
 			if ( in_array( 'stock_status', $fields ) ) {
 				$data['stock_status'] = $product->get_stock_status( $context );
+			}
+			if ( in_array( 'has_options', $fields ) ) {
+				$data['has_options'] = $product->has_options( $context );
 			}
 		}
 		return $data;

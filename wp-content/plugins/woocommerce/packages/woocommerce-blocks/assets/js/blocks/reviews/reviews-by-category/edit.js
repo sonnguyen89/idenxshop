@@ -1,7 +1,7 @@
 /**
  * External dependencies
  */
-import { __, _n, sprintf } from '@wordpress/i18n';
+import { __ } from '@wordpress/i18n';
 import { InspectorControls } from '@wordpress/block-editor';
 import {
 	Button,
@@ -10,11 +10,9 @@ import {
 	ToggleControl,
 	withSpokenMessages,
 } from '@wordpress/components';
-import { SearchListItem } from '@woocommerce/components';
 import PropTypes from 'prop-types';
 import ProductCategoryControl from '@woocommerce/editor-components/product-category-control';
-import { Icon, review } from '@woocommerce/icons';
-import classNames from 'classnames';
+import { Icon, commentContent } from '@wordpress/icons';
 
 /**
  * Internal dependencies
@@ -30,10 +28,10 @@ import {
 /**
  * Component to handle edit mode of "Reviews by Category".
  *
- * @param {Object} props Incoming props for the component.
- * @param {Object} props.attributes Incoming block attributes.
+ * @param {Object}            props                Incoming props for the component.
+ * @param {Object}            props.attributes     Incoming block attributes.
  * @param {function(any):any} props.debouncedSpeak
- * @param {function(any):any} props.setAttributes Setter for block attributes.
+ * @param {function(any):any} props.setAttributes  Setter for block attributes.
  */
 const ReviewsByCategoryEditor = ( {
 	attributes,
@@ -41,39 +39,6 @@ const ReviewsByCategoryEditor = ( {
 	setAttributes,
 } ) => {
 	const { editMode, categoryIds } = attributes;
-
-	const renderCategoryControlItem = ( args ) => {
-		const { item, search, depth = 0 } = args;
-
-		const accessibleName = ! item.breadcrumbs.length
-			? item.name
-			: `${ item.breadcrumbs.join( ', ' ) }, ${ item.name }`;
-
-		return (
-			<SearchListItem
-				className={ classNames(
-					'woocommerce-product-categories__item',
-					'has-count',
-					{
-						'is-searching': search.length > 0,
-						'is-skip-level': depth === 0 && item.parent !== 0,
-					}
-				) }
-				{ ...args }
-				aria-label={ sprintf(
-					/* translators: %1$s is the search term name, %2$d is the number of products returned for search query. */
-					_n(
-						'%1$s, has %2$d product',
-						'%1$s, has %2$d products',
-						item.count,
-						'woocommerce'
-					),
-					accessibleName,
-					item.count
-				) }
-			/>
-		);
-	};
 
 	const getInspectorControls = () => {
 		return (
@@ -88,7 +53,6 @@ const ReviewsByCategoryEditor = ( {
 							const ids = value.map( ( { id } ) => id );
 							setAttributes( { categoryIds: ids } );
 						} }
-						renderItem={ renderCategoryControlItem }
 						isCompact={ true }
 						showReviewCount={ true }
 					/>
@@ -140,7 +104,7 @@ const ReviewsByCategoryEditor = ( {
 			<Placeholder
 				icon={
 					<Icon
-						srcElement={ review }
+						icon={ commentContent }
 						className="block-editor-block-icon"
 					/>
 				}
@@ -175,15 +139,20 @@ const ReviewsByCategoryEditor = ( {
 		return renderEditMode();
 	}
 
+	const buttonTitle = __(
+		'Edit selected categories',
+		'woocommerce'
+	);
+
 	return (
 		<>
-			{ getBlockControls( editMode, setAttributes ) }
+			{ getBlockControls( editMode, setAttributes, buttonTitle ) }
 			{ getInspectorControls() }
 			<EditorContainerBlock
 				attributes={ attributes }
 				icon={
 					<Icon
-						srcElement={ review }
+						icon={ commentContent }
 						className="block-editor-block-icon"
 					/>
 				}

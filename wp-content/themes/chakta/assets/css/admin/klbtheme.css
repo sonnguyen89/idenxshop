@@ -1,0 +1,103 @@
+div#klb-blogmeta-gallery {
+    display: none;
+}
+
+div#klb-blogmeta-audio {
+    display: none;
+}
+
+div#klb-blogmeta-video {
+    display: none;
+}
+
+*[class*="mega_main"] #wpbody select {
+    line-height: 1.5;
+}
+
+.sidebar-sidemenu .sidemenu-nav{
+	top:32px;
+}
+
+@media screen and (min-width: 601px){
+	header .header-navigation.sticky {
+		top: 32px;
+	}
+}
+
+@media (max-width:782px) and (min-width:601px) {
+	header .header-navigation.sticky {
+		top: 46px;
+	}
+}
+
+/* For Vehicle Data Metabox */
+.rwmb-meta-box .rwmb-field {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.rwmb-meta-box:before,.rwmb-meta-box:after {content: '';display: table;clear: both;}
+
+.rwmb-input input, .rwmb-input select {
+	width:100%;
+	max-width: 100% !important;
+}
+
+.rwmb-field .select2-container {
+    width: 100%;
+}
+
+.taxonomy-klb_make .term-description-wrap {
+    display: none;
+}
+
+header.header-area.header-area-v1.header-area-v3.transparent-header {
+    top: 32px;
+}
+
+form#purchase_code_form,
+.c-inner {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #C0CCD9;
+    padding: 10px 20px;
+	margin-top: 40px;
+}
+
+div#klb-theme-registration {
+    margin: 5px 15px 2px;
+}
+
+div#klb-theme-registration:before,div#klb-theme-registration:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#klb-theme-registration div#col-left {
+    width: 50%;
+}
+
+#klb-theme-registration div#col-right {
+    width: 50%;
+}
+
+.data-response {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #C0CCD9;
+    padding: 10px 20px;
+    color: #e03a3a;
+    font-weight: 500;
+    width: 50%;
+    margin: 5px 15px 2px;
+}
+
+.data-response.success {
+    color: #068c06;
+}

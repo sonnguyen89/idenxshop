@@ -1,14 +1,15 @@
 <?php
 namespace Automattic\WooCommerce\Blocks\Payments;
 
-use Automattic\WooCommerce\Blocks\Package;
 use Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry;
-use Automattic\WooCommerce\Blocks\StoreApi\Utilities\NoticeHandler;
-use Automattic\WooCommerce\Blocks\Payments\Integrations\Stripe;
-use Automattic\WooCommerce\Blocks\Payments\Integrations\Cheque;
-use Automattic\WooCommerce\Blocks\Payments\Integrations\PayPal;
+use Automattic\WooCommerce\Blocks\Package;
 use Automattic\WooCommerce\Blocks\Payments\Integrations\BankTransfer;
 use Automattic\WooCommerce\Blocks\Payments\Integrations\CashOnDelivery;
+use Automattic\WooCommerce\Blocks\Payments\Integrations\Cheque;
+use Automattic\WooCommerce\Blocks\Payments\Integrations\PayPal;
+use Automattic\WooCommerce\StoreApi\Payments\PaymentContext;
+use Automattic\WooCommerce\StoreApi\Payments\PaymentResult;
+use Automattic\WooCommerce\StoreApi\Utilities\NoticeHandler;
 
 /**
  *  The Api class provides an interface to payment method registration.
@@ -63,7 +64,7 @@ class Api {
 	 * @return array
 	 */
 	public function add_payment_method_script_dependencies( $dependencies, $handle ) {
-		if ( ! in_array( $handle, [ 'wc-checkout-block', 'wc-checkout-block-frontend', 'wc-checkout-i2-block', 'wc-checkout-i2-block-frontend', 'wc-cart-block', 'wc-cart-block-frontend' ], true ) ) {
+		if ( ! in_array( $handle, [ 'wc-checkout-block', 'wc-checkout-block-frontend', 'wc-cart-block', 'wc-cart-block-frontend' ], true ) ) {
 			return $dependencies;
 		}
 		return array_merge( $dependencies, $this->payment_method_registry->get_all_active_payment_method_script_dependencies() );
@@ -105,12 +106,6 @@ class Api {
 	 * @param PaymentMethodRegistry $payment_method_registry Payment method registry instance.
 	 */
 	public function register_payment_method_integrations( PaymentMethodRegistry $payment_method_registry ) {
-		// This is temporarily registering Stripe until it's moved to the extension.
-		if ( class_exists( '\WC_Stripe' ) && ! $payment_method_registry->is_registered( 'stripe' ) ) {
-			$payment_method_registry->register(
-				Package::container()->get( Stripe::class )
-			);
-		}
 		$payment_method_registry->register(
 			Package::container()->get( Cheque::class )
 		);
@@ -214,7 +209,7 @@ class Api {
 						sprintf( 'console.error( "%s" );', $error_message )
 					);
 
-					$cart_checkout_scripts = [ 'wc-cart-block', 'wc-cart-block-frontend', 'wc-checkout-block', 'wc-checkout-block-frontend', 'wc-checkout-i2-block', 'wc-checkout-i2-block-frontend' ];
+					$cart_checkout_scripts = [ 'wc-cart-block', 'wc-cart-block-frontend', 'wc-checkout-block', 'wc-checkout-block-frontend' ];
 					foreach ( $cart_checkout_scripts as $script_handle ) {
 						if (
 							! array_key_exists( $script_handle, $wp_scripts->registered ) ||
