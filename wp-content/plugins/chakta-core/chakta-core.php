@@ -235,6 +235,10 @@ final class Chakta_Elementor_Addons
 		// Home Slider Two
 		require_once( __DIR__ . '/elementor/widgets/chakta-home-slider-2.php' );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Chakta_Home_Slider_2_Widget() );
+
+        // Home Slider Three
+        require_once( __DIR__ . '/elementor/widgets/chakta-home-slider-3.php' );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\Chakta_Home_Slider_3_Widget() );
 		
 		// Breadcrumb
 		require_once( __DIR__ . '/elementor/widgets/chakta-breadcrumb.php' );

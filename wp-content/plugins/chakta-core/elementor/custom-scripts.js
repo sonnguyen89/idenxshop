@@ -203,8 +203,10 @@ jQuery.noConflict();
 
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider.default', klb_home_slider);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider-2.default', klb_home_slider_two);
+        elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider-3.default', klb_home_slider);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider.default', klb_niceselect);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider-2.default', klb_niceselect);
+        elementorFrontend.hooks.addAction('frontend/element_ready/chakta-home-slider-3.default', klb_niceselect);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-image-carousel.default', klb_image_carousel);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-product-carousel.default', klb_product_carousel);
         elementorFrontend.hooks.addAction('frontend/element_ready/chakta-testimonial.default', klb_testimonial_carousel);
