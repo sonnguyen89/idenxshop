@@ -78,3 +78,5 @@ wp-config.php
 /wp-content/themes/illdy/cache/
 /wp-content/plugins/widgetkit/cache/
 
+/wp-content/plugins/woocommerce-gateway-stripe/build/*
+
